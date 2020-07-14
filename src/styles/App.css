@@ -1,5 +1,10 @@
-.App {
+#AppWrapper{
   text-align: center;
+}
+#App {
+  display: inline-block;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .App-logo {
