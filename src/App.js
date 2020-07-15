@@ -2,6 +2,7 @@ import React from 'react';
 import ProfileBanner from './components/profile/ProfileBanner'
 import Nav from './components/nav/Nav'
 import './styles/App.css';
+import './styles/Main.css';
 
 export default class App extends React.Component{
   render(){
@@ -9,7 +10,9 @@ export default class App extends React.Component{
       <div id="App">
         <ProfileBanner />
         <Nav />
-        <div id="ContentWindow"></div>
+        <div id="Main">
+                
+        </div>
       </div>
     )
   }

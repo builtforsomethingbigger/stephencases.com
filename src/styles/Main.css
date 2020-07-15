@@ -1,0 +1,11 @@
+#Main{
+    position: relative;
+    display: block;
+    float: left;
+    width: 68%;
+    min-width: 550px;
+    height: 89vh;
+    top: 40px;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
