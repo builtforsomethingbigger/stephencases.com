@@ -3,38 +3,30 @@
     display: block;
     float: left;
     width: 70%;
+    min-width: 550px;
     height: fit-content;
-    top: 0;
-    left: 0;
-    box-shadow: inset 0px 0px 2px black;
+    top: 20px;
+    right: 0;
 }
 #NavMenu{
     position: relative;
     display: block;
-    float: right;
-}
-.portfolio{
-    position: relative;
-    display: block;
     float: left;
-    width: fit-content;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    padding: 25px;
-    cursor: pointer;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-.portfolio:hover{
-    text-shadow: none;
 }
 .navOptions{
     display: inline-block;
     font-size: 20px;
-    font-weight: bold;
-    padding: 25px;
+    padding: 20px 80px 20px 80px;
     cursor: pointer;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 .navOptions:hover{
     text-shadow: none;
+    text-decoration: underline;
+}
+.navOptions:active{
+    text-shadow: none;
+    text-decoration: none;
 }

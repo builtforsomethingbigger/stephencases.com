@@ -1,10 +1,22 @@
 #AppWrapper{
   text-align: center;
+  background-color: white;
+  /* background: linear-gradient(
+    to bottom right, 
+    rgb(197, 197, 197) 0%,
+    rgb(159, 159, 159) 30%,
+    rgb(217, 217, 217) 60%,
+    rgb(205, 205, 205) 100%
+  );  */
+  overflow: scroll;
 }
 #App {
   display: inline-block;
   width: 100%;
+  min-width: 1200px;
   max-width: 1500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
 }
 
 .App-logo {
