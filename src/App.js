@@ -12,7 +12,7 @@ export default class App extends React.Component{
         <ProfileBanner />
         <div id="Main">
           <Bio /> 
-          <Portfolio /> 
+          {/* <Portfolio />  */}
         </div>
       </div>
     )
