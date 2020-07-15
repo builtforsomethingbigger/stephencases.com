@@ -5,6 +5,7 @@
     width: 30%;
     min-width: 300px;
     height: 100vh;
+    overflow: hidden;
     /* box-shadow: inset 0px 0px 2px black; */
 }
 #ProfilePicture{
@@ -54,4 +55,31 @@
     font-size: 25px;
     line-height: 35px;
     width: 100%;
+}
+
+
+
+
+
+@media only screen and (max-width: 724px){
+    #ProfileBanner{
+        width: 100%;
+        height: 260px;
+    }
+    #ProfilePicture{
+        width: 120px;
+        height: 115px;    
+    }
+    .profile-name{
+        top: 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .profile-title{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        top: 20px;
+        font-size: 20px;
+    }
 }
