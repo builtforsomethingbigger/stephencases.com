@@ -1,13 +1,42 @@
+body{
+  /* background: url('https://i.pinimg.com/originals/33/d0/e1/33d0e10ff8a6a3014e54d5da3f8e91f8.gif') no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: hard-light;
+}
 #AppWrapper{
   text-align: center;
-  background-color: white;
   overflow: scroll;
+  background-color: rgb(255, 255, 255);
+  /* animation-name: gradient;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
+  @keyframes gradient {
+    0%  {
+      background-color:rgba(255, 255, 255, 0.5);
+    }
+    25% {
+      background-color:rgba(255, 255, 255, 0.8);
+    }
+    50%  {
+      background-color:rgba(255, 255, 255, 1);
+    }
+    75%  {
+      background-color:rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      background-color:rgba(255, 255, 255, 0.5);
+    } */
+  }
 #App {
   display: inline-block;
   width: 100%;
   min-width: 1000px;
   max-width: 1350px;
+  background-color: rgba(255, 255, 255, 0.9);
   /* background: linear-gradient(
     to bottom right, 
     rgb(188, 192, 195) 0%,

@@ -11,16 +11,16 @@
     display: inline-block;
     width: 100%;
     height: fit-content;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(64, 64, 64);
     text-align: center;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .timeline-date{
     position: relative;
     display: block;
     float: left;
-    top: 1px;
+    top: 1.5px;
     left: -10px;
     width: 12%;
     color: rgb(79, 79, 79);
@@ -38,7 +38,7 @@
     position: relative;
     display: block;
     float: left;
-    width: 80%;
+    width: 78%;
     left: 2%;
     border-left: 2px solid rgb(117, 149, 185);
     padding-left: 30px;
@@ -46,14 +46,14 @@
 }
 .divider-marker{
     position: absolute;
-    top: 6px;
-    left: -11px;
-    width: 14px;
-    height: 3px;
+    top: 3px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
     background-color: white;
-    border: 3px solid rgb(95, 128, 165);
+    border: 1px solid rgba(95, 128, 165, 0.7);
     border-radius: 50%;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 5px rgb(0, 81, 173);
 }
 
 
@@ -61,15 +61,24 @@
 
 @media only screen and (max-width: 724px){
     .bio-header{
-        font-size: 15px;
+        font-size: 14.5px;
+    }
+    .timeline-date{
+        display: inline-block;
+        float: none;
+        width: 85%;
+        left: 15px;
+        margin-bottom: 10px;
+        transform: scale(1.2);
     }
     .timeline-date-title{
         font-size: 15px;
         text-align: left;
     }
     .timeline-date-description{
-        width: 78%;
+        width: 88%;
         border: none;
+        left: 0;
     }
     .divider-marker{
         display: none;
