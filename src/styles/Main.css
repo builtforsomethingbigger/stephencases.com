@@ -3,21 +3,12 @@
     display: block;
     float: left;
     width: 74.5%;
-    height: 99vh;
-    top: .5vh;
+    height: 98.4vh;
+    top: .8vh;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
     background-color: white;
     overflow: hidden;
 }
-/* #Portfolio{
-    position: relative;
-    display: block;
-    float: left;
-    width: 100%;
-    height: 100%;
-    text-align: left;
-    overflow: scroll;
-} */
 
 
 

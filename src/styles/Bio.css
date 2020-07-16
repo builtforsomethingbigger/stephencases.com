@@ -1,6 +1,7 @@
 #Bio{
     position: relative;
-    display: inline-block;
+    display: none;
+    /* display: inline-block; */
     width: 100%;
     height: 100%;
     text-align: left;
@@ -40,24 +41,37 @@
     float: left;
     width: 78%;
     left: 2%;
-    border-left: 2px solid rgb(117, 149, 185);
+    border-left: 2px solid rgb(138, 169, 205);
     padding-left: 30px;
     font-size: 17px;
 }
 .divider-marker{
     position: absolute;
-    top: 3px;
+    top: 4px;
     left: -7px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: white;
-    border: 1px solid rgba(95, 128, 165, 0.7);
+    border: 2px solid rgba(95, 128, 165, 0.7);
     border-radius: 50%;
     box-shadow: inset 0px 0px 5px rgb(0, 81, 173);
+
+    animation-name: blip;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
-
-
-
+  @keyframes blip {
+    0%  {
+        box-shadow:  0px 0px 1px rgb(87, 147, 215);
+    }
+    50%  {
+        box-shadow:  0px 0px 5px rgb(0, 76, 255);
+    }
+    100% {
+        box-shadow:  0px 0px 1px rgb(87, 147, 215);
+    }
+  }
 
 @media only screen and (max-width: 724px){
     .bio-header{
