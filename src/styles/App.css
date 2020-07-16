@@ -1,15 +1,37 @@
 body{
-  /* background: url('https://bhf-cdn.azureedge.net/bhf-blob-prod/0008345_grey-marble-adhesive-film_600.jpeg'); */
+  /* background: url('https://media1.tenor.com/images/a45486cc18b375029613df6dfb415acf/tenor.gif?itemid=15984569'); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-blend-mode: overlay;
+
+  /* animation-name: gradient;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; */
+}
+  @keyframes gradient {
+    0%  {
+      background-color:rgba(0, 253, 17, 0.4);
+    }
+    20% {
+      background-color:rgba(0, 170, 255, 0.4);
+    }
+    55%  {
+      background-color:rgba(254, 9, 91, 0.4);
+    }
+    90%  {
+      background-color:rgba(254, 229, 9, 0.4);
+    }    
+    100% {
+      background-color:rgba(0, 253, 17, 0.4);
+    }
 }
 #AppWrapper{
   height: 100vh;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.669);
   overflow: hidden;
 }
 #App {
@@ -18,7 +40,7 @@ body{
   min-width: 1000px;
   max-width: 1500px;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 100px rgba(98, 109, 120, 0.621);
 }
 li{
   list-style: none;

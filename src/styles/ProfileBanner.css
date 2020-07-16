@@ -8,6 +8,10 @@
     overflow: hidden;
     /* box-shadow: inset 0px 0px 2px black; */
 }
+.menuBtn{
+    /*  */
+    display: none;
+}
 #ProfilePicture{
     position: relative;
     display: inline-block;
@@ -17,8 +21,11 @@
     top: 20px;
     width: 250px;
     height: 240px;
-    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.258);
+    box-shadow: inset 0px 0px 12px rgba(138, 169, 205, 0.3);
     border-radius: 50%;
+}
+#ProfilePicture:hover{
+    box-shadow: inset 0px 0px 8px rgba(138, 169, 205, 0.5);
 }
 .profile-name{
     position: relative;
@@ -28,7 +35,7 @@
     font-size: 30px;
     font-weight: bold;
     color: rgb(64, 64, 64);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 1px 2px rgba(138, 169, 205, 0.5);
 }
 .profile-title{
     position: relative;
@@ -63,6 +70,17 @@
 
 
 @media only screen and (max-width: 724px){
+    .menuBtn{
+        display: block;
+        float: right;
+        top:0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 55px;
+        font-weight: bold;
+        margin-right: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }    
     #ProfileBanner{
         width: 100%;
         height: 210px;

@@ -5,6 +5,7 @@ import '../../styles/ProfileBanner.css';
 const ProfileBanner = () => {
     return(
         <div id="ProfileBanner">
+            <div className="menuBtn">≡</div>
             <div id="ProfilePicture"></div>
             <div id="ProfileInfo">
                 <span className="profile-name">Stephen Cases</span>

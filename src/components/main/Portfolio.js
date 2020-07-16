@@ -5,17 +5,17 @@ export default class Portfolio extends React.Component{
     render(){
         return(
             <div id="Portfolio">
-                <div className="card-row">
-                    <div className="portfolio-card"></div>
-                    <div className="portfolio-card"></div>
+                <div className="portfolio-card">
+                    <div className="card-info"></div>
                 </div>
-                <div className="card-row">
-                    <div className="portfolio-card"></div>
-                    <div className="portfolio-card"></div>
+                <div className="portfolio-card">
+                    <div className="card-info"></div>
                 </div>
-                <div className="card-row">
-                    <div className="portfolio-card"></div>
-                    <div className="portfolio-card"></div>
+                <div className="portfolio-card">
+                    <div className="card-info"></div>
+                </div>
+                <div className="portfolio-card">
+                    <div className="card-info"></div>
                 </div>
             </div>
         )

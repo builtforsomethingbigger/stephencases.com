@@ -6,7 +6,7 @@
     height: fit-content;
     top: 60px;
     left: 0;
-    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); */
+    /* box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.3); */
 }
 #NavMenu{
     position: relative;
@@ -15,7 +15,7 @@
     left: 0;
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 1px 2px rgba(138, 169, 205, 0.5);
 }
 .navOptions{
     position: relative;
@@ -24,17 +24,17 @@
     left: -11%;
     font-size: 20px;
     padding: 15px 0px 15px 0px;
-    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 15px rgba(138, 169, 205, 0.3);
     cursor: pointer;
 }
 .navOptions:hover{
     transform: scale(1.05);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.3);
+    text-shadow: 0px 1px 2px rgba(138, 169, 205, 0.2);
+    box-shadow: 0px 0px 8px rgb(138, 169, 205, 0.3);
 }
 .navOptions:active{
     text-shadow: none;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 0px 10px rgba(138, 169, 205, 0.2);
 }
 .text-grey{
     color: rgb(79, 79, 79);
