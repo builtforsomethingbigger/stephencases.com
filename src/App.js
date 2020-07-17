@@ -1,12 +1,13 @@
 import React from 'react';
 import axios from 'axios'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import ProfileBanner from './components/profile/ProfileBanner'
 import Login from './components/scases/Login'
 import PostForm from './components/scases/PostForm'
 import Bio from './components/main/Bio'
 import Portfolio from './components/main/Portfolio'
+import Resume from './components/main/Resume'
 import './styles/App.css';
 
 export default class App extends React.Component{
@@ -59,26 +60,31 @@ export default class App extends React.Component{
     return(
       <div id="App">
         <ProfileBanner />
-        <BrowserRouter>
-        <Route exact path='/' render={props => (
-                <Home {...props} 
+        <Route exact path='/' render={routerProps => (
+                <Home {...routerProps} 
                   loggedInStatus={this.state.isLoggedIn}
                 />
               )}/>
         <div id="Main">
             <Switch>
-              <Route exact path='/bio' component={<Bio />}/>
-              <Route exact path='/portfolio' component={<Portfolio />}/>
+              <Route exact path='/bio'  render={routerProps => (
+                <Bio  {...routerProps} />
+              )}/>
+              <Route exact path='/portfolio'  render={routerProps => (
+                <Portfolio  {...routerProps} />
+              )}/>
+              <Route exact path='/resume'  render={routerProps => (
+                <Resume  {...routerProps} />
+              )}/>
               <Route exact path='/crm/new-post' component={<PostForm />}/>
-              <Route exact path='/login' render={props => (
-                <Login  {...props}
+              <Route exact path='/login' render={routerProps => (
+                <Login  {...routerProps}
                   handleLogin={this.handleLogin} 
                   loggedInStatus={this.state.isLoggedIn} 
                 />
               )}/>
             </Switch>
         </div>
-          </BrowserRouter>
       </div>
     )
   }
