@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../styles/PostForm.css';
 
 export default class PostForm extends React.Component{
     render(){

@@ -42,6 +42,19 @@ body{
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 0px 100px rgba(98, 109, 120, 0.621);
 }
+
+#Main{
+  position: relative;
+  display: block;
+  float: left;
+  width: 74.5%;
+  height: 98.4vh;
+  top: .8vh;
+  box-shadow: inset 0px 0px 15px rgba(138, 169, 205, 0.3);
+  background-color: white;
+  overflow: hidden;
+}
+
 li{
   list-style: none;
 }
@@ -72,11 +85,25 @@ li{
 
 
 
-
-@media only screen and (max-width: 724px){
-  #App{
+@media only screen and (max-width: 1025px){
+  #Main{
       width: 100%;
       min-width: 100%;
-      height: 100%;
+      height: 69vh;
+      top:0;
+  }
+}
+
+@media only screen and (max-width: 415px){
+  #App{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+  }
+  #Main{
+      width: 100%;
+      min-width: 100%;
+      height: 74.5vh;
+      top:0;
   }
 }

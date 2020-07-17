@@ -5,6 +5,7 @@
     width: 25%;
     min-width: 300px;
     height: 100vh;
+    text-align: center;
     overflow: hidden;
     /* box-shadow: inset 0px 0px 2px black; */
 }
@@ -101,7 +102,7 @@
 
 
 
-@media only screen and (max-width: 724px){
+@media only screen and (max-width: 415px){
     .menuBtn{
         position: absolute;
         display: block;
@@ -120,22 +121,29 @@
     }
     #ProfileBanner{
         width: 100%;
-        height: 210px;
+        height: 140px;
     }
     #ProfilePicture{
-        width: 140px;
-        height: 135px;    
+        float: left;
+        top: 20px;
+        left: 20px;
+        width: 110px;
+        height: 105px;    
     }
     .profile-name{
-        top: 20px;
+        text-align: left;
+        top: -35px;
+        left: 140px;
         font-size: 24px;
         font-weight: bold;
     }
     .profile-title{
         position: relative;
         display: inline-block;
+        text-align: left;
         width: 100%;
-        top: 20px;
+        top: -35px;
+        left: 140px;
         font-size: 16px;
     }
 }

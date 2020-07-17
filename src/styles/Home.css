@@ -1,0 +1,18 @@
+#HomePage{
+    position: absolute;
+    display: none;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.375);
+    overflow: hidden;
+    z-index: 20;
+}
+.home-container{
+    position: relative;
+    display: inline-block;
+    width: 95%;
+    height: 95%;
+    top: 2%;
+}
