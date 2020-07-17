@@ -3,6 +3,7 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 import '../../styles/Login.css';
 
+const loginAPI = 'http://localhost:3001/login'
 export default class Login extends React.Component{
 
     state = {
@@ -30,7 +31,7 @@ export default class Login extends React.Component{
         password: password
         }
         
-        axios.post('http://localhost:3001/login', {user}, {withCredentials: true})
+        fetch(loginAPI, {user}, {withCredentials: true})
             .then(response => {
             if (response.data.logged_in) {
                 this.props.handleLogin(response.data)
