@@ -1,6 +1,5 @@
 import React from 'react'
 import Entry from './Entry'
-import '../../styles/Main.css';
 import '../../styles/Resume.css';
 
  const Resume = (props) => {

@@ -1,5 +1,4 @@
 import React from 'react';
-// import axios from 'axios'
 import {Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import ProfileBanner from './components/profile/ProfileBanner'
@@ -11,6 +10,7 @@ import Resume from './components/main/Resume'
 import './styles/App.css';
 
 const resumeAPI = 'http://localhost:3001/resumes'
+const bioAPI = 'http://localhost:3001/bios'
 
 export default class App extends React.Component{
 
@@ -19,7 +19,8 @@ export default class App extends React.Component{
     this.state = { 
       isLoggedIn: false,
       user: {},
-      entries: []
+      entries: [],
+      bio: []
      };
   }  
 
@@ -27,7 +28,20 @@ export default class App extends React.Component{
   componentDidMount() {
     this.loginStatus()
     this.fetchResumes()
+    this.fetchBio()
   }
+
+  fetchResumes = () => {
+    fetch(resumeAPI)
+    .then(res=>res.json())
+    .then(entries => this.setState({ entries }))
+  }
+  fetchBio = () => {
+    fetch(bioAPI)
+    .then(res=>res.json())
+    .then(bio => this.setState({ bio }))
+  }
+
 
 
 //LOGIN FUNCTIONS
@@ -67,11 +81,6 @@ export default class App extends React.Component{
   }
 //END LOGIN FUNCTIONS
 
-  fetchResumes = () => {
-    fetch(resumeAPI)
-    .then(res=>res.json())
-    .then(entries => this.setState({ entries }))
-  }
 
 
   render(){
@@ -92,13 +101,18 @@ export default class App extends React.Component{
             )}/>
             <div id="Main">
               <Route exact path='/bio'  render={routerProps => (
-                <Bio  {...routerProps} />
+                <Bio  {...routerProps} 
+                  bio={this.state.bio}
+                />
               )}/>
               <Route exact path='/portfolio'  render={routerProps => (
-                <Portfolio  {...routerProps} />
+                <Portfolio  {...routerProps} 
+                />
               )}/>
               <Route exact path='/resume'  render={routerProps => (
-                <Resume  {...routerProps} entries={this.state.entries} />
+                <Resume  {...routerProps} 
+                  entries={this.state.entries} 
+                />
               )}/>
               {/* <Route exact path='/crm/new-post' component={<PostForm />}/> */}
             </div>

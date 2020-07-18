@@ -1,10 +1,13 @@
 import React from 'react'
-// import axios from 'axios'
 // import {Link} from 'react-router-dom'
 import '../../styles/Login.css';
 
 const loginAPI = 'http://localhost:3001/logged_in'
 export default class Login extends React.Component{
+    constructor(props){
+        super(props)
+        this.goBack = this.goBack.bind(this)
+    }
 
     state = {
         username: '',
@@ -12,6 +15,10 @@ export default class Login extends React.Component{
         errors: ''
     }
 
+    goBack(){
+        this.props.history.goBack();
+    }
+    
     componentWillMount() {
         return this.props.loggedInStatus ? this.redirect() : null
     }
@@ -92,11 +99,11 @@ export default class Login extends React.Component{
                                 onChange={this.onChangeHandler}
                             />
                         </div>
-                        <button type="submit" onClick={this.submitHandler}>LOGIN</button>
+                        {/* <button type="submit" onClick={this.submitHandler}>LOGIN</button> */}
                     </form>
                     <div>
                         <p className="go-back-text">ARE YOU LOST?<br/>HONEST MISTAKE.</p>
-                        <span className="go-back-link">GO BACK</span>
+                        <span className="go-back-link" onClick={() => {this.goBack()}}>GO BACK</span>
                     </div>
                 </div>
                 <div className="loginPageFx"></div>

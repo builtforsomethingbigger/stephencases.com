@@ -26,6 +26,9 @@
     border-radius: 50%;
     overflow: hidden;
 }
+#ProfilePicture:hover{
+    box-shadow: inset 0px 0px 10px rgba(138, 169, 205, 0.5);
+}
 .signin-btn{
     position: absolute;
     display: none;
@@ -57,9 +60,6 @@
 .signin-btn:hover{
     text-shadow: 0px 0px 3px rgb(86, 86, 86);
     bottom: 2px;
-}
-#ProfilePicture:hover{
-    box-shadow: inset 0px 0px 8px rgba(138, 169, 205, 0.5);
 }
 .profile-name{
     position: relative;

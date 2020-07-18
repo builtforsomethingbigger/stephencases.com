@@ -11,8 +11,53 @@
     display: inline-block;
     width: 100%;
     height: fit-content;
-    font-size: 20px;
+    top: 30px;
+}
+.bio-intro{
+    font-size: 42px;
+    font-weight: bold;
     color: rgb(64, 64, 64);
     text-align: center;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+}
+.bio-body{
+    padding: 30px 80px;
+}
+.bio-content{
+    font-size: 24px;
+    line-height: 28px;
+    color: rgb(64, 64, 64);
+    text-align: left;
+    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+}
+.full-stack{
+    animation-name: fullStack;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+  @keyframes fullStack {
+    0%  {
+        color: rgb(151, 193, 241);
+        text-shadow: 0px 0px 2px rgb(121, 133, 159);
+    }
+    50%  {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 8px rgb(94, 129, 205);
+    }
+    100% {
+        color: rgb(151, 193, 241);
+        text-shadow: 0px 0px 2px rgb(121, 133, 159);
+    }
+  }
+
+
+
+@media only screen and (max-width: 724px){
+    .bio-intro{
+        font-size: 35px;
+    }
+    .bio-body{
+        padding: 0px 30px;
+    }
 }
