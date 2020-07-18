@@ -1,9 +1,9 @@
 import React from 'react'
-import axios from 'axios'
-import {Link} from 'react-router-dom'
+// import axios from 'axios'
+// import {Link} from 'react-router-dom'
 import '../../styles/Login.css';
 
-const loginAPI = 'http://localhost:3001/login'
+const loginAPI = 'http://localhost:3001/logged_in'
 export default class Login extends React.Component{
 
     state = {
@@ -25,14 +25,21 @@ export default class Login extends React.Component{
 
     submitHandler = e => {
         e.preventDefault()
-        const {username, email, password} = this.state
+        const {username, password} = this.state
         let user = {
         username: username,
         password: password
         }
         
-        fetch(loginAPI, {user}, {withCredentials: true})
-            .then(response => {
+        fetch(loginAPI, {user}, {withCredentials: true}, {
+            method:'GET',
+            mode: 'cors',
+            headers:{
+                'Access-Control-Allow-Origin':'*'
+            }
+        })
+        .then(res=>res.json())
+        .then(response => {
             if (response.data.logged_in) {
                 this.props.handleLogin(response.data)
                 this.redirect()
@@ -41,7 +48,7 @@ export default class Login extends React.Component{
                 errors: response.data.errors
                 })
             }
-            })
+        })
         .catch(error => console.log('api errors:', error))
     };
 
