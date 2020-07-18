@@ -1,11 +1,11 @@
 #HomePage{
     position: absolute;
-    display: none;
+    display: block;
     text-align: center;
     width: 100vw;
     height: 100vh;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.375);
+    background-color: rgba(255, 255, 255, 0.8);
     overflow: hidden;
     z-index: 20;
 }

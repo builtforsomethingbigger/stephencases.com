@@ -74,8 +74,14 @@ export default class App extends React.Component{
                   loggedInStatus={this.state.isLoggedIn}
                 />
               )}/>
-        <div id="Main">
             <Switch>
+            <Route exact path='/login' render={routerProps => (
+              <Login  {...routerProps}
+                handleLogin={this.handleLogin} 
+                loggedInStatus={this.state.isLoggedIn} 
+              />
+            )}/>
+            <div id="Main">
               <Route exact path='/bio'  render={routerProps => (
                 <Bio  {...routerProps} />
               )}/>
@@ -86,14 +92,8 @@ export default class App extends React.Component{
                 <Resume  {...routerProps} entries={this.state.entries} />
               )}/>
               <Route exact path='/crm/new-post' component={<PostForm />}/>
-              <Route exact path='/login' render={routerProps => (
-                <Login  {...routerProps}
-                  handleLogin={this.handleLogin} 
-                  loggedInStatus={this.state.isLoggedIn} 
-                />
-              )}/>
-            </Switch>
-        </div>
+            </div>
+        </Switch>
       </div>
     )
   }
