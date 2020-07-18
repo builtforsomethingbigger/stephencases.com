@@ -10,19 +10,23 @@ import Portfolio from './components/main/Portfolio'
 import Resume from './components/main/Resume'
 import './styles/App.css';
 
+const resumeAPI = 'http://localhost:3001/resumes'
+
 export default class App extends React.Component{
 
   constructor(props) {
     super(props);
     this.state = { 
       isLoggedIn: false,
-      user: {}
+      user: {},
+      entries: []
      };
   }  
 
 
   componentDidMount() {
     this.loginStatus()
+    this.fetchResumes()
   }
 
 
@@ -54,6 +58,11 @@ export default class App extends React.Component{
   }
 //END LOGIN FUNCTIONS
 
+  fetchResumes = () => {
+    fetch(resumeAPI)
+    .then(res=>res.json())
+    .then(entries => this.setState({ entries }))
+  }
 
 
   render(){
@@ -74,7 +83,7 @@ export default class App extends React.Component{
                 <Portfolio  {...routerProps} />
               )}/>
               <Route exact path='/resume'  render={routerProps => (
-                <Resume  {...routerProps} />
+                <Resume  {...routerProps} entries={this.state.entries} />
               )}/>
               <Route exact path='/crm/new-post' component={<PostForm />}/>
               <Route exact path='/login' render={routerProps => (

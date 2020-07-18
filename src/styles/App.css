@@ -28,13 +28,16 @@ body{
       background-color:rgba(0, 253, 17, 0.4);
     }
 }
-#AppWrapper{
+#root{
+  position: absolute;
+  width: 100vw;
   height: 100vh;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.669);
   overflow: hidden;
 }
 #App {
+  position: relative;
   display: inline-block;
   width: 100%;
   min-width: 1000px;
@@ -103,7 +106,7 @@ li{
   #Main{
       width: 100%;
       min-width: 100%;
-      height: 74.5vh;
+      height: 78vh;
       top:0;
   }
 }

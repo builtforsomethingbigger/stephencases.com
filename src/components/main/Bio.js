@@ -7,7 +7,7 @@ export default class Bio extends React.Component{
         return(
             <div id="Bio">
                 <div className="bio-header">
-                    <h1>Hi! My name is Steve. I'm a Full-Stack Developer.</h1>
+                    <h1>Hello! My name is Steve.<br/>I'm a Full-Stack Developer.</h1>
                 </div>
             </div>
         )

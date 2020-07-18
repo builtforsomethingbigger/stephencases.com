@@ -71,6 +71,19 @@
         box-shadow:  0px 0px 1px rgb(87, 147, 215);
     }
   }
+.entry-description{
+    margin-top: -21px;
+}
+.entry-description-company{
+    margin-bottom: -18px;
+}
+.entry-description-title{
+    font-style: italic;
+    color: rgb(59, 84, 134);
+}
+.entry-description-line{
+    margin: -10px 0px 25px 15px;
+}
 
 @media only screen and (max-width: 724px){
     .bio-header{
