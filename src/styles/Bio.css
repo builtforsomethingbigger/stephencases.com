@@ -11,7 +11,7 @@
     display: inline-block;
     width: 100%;
     height: fit-content;
-    top: 30px;
+    top: 20px;
 }
 .bio-intro{
     font-size: 42px;
@@ -21,7 +21,7 @@
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
 .bio-body{
-    padding: 30px 80px;
+    padding: 0px 80px;
 }
 .bio-content{
     font-size: 24px;
