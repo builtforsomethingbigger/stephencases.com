@@ -19,7 +19,7 @@
     width: 95%;
     height: 100%;
     max-height: 350px;
-    box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.3);
+    box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
     margin: 2%;
     cursor: pointer;
 }

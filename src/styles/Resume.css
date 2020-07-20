@@ -15,6 +15,7 @@
 }
 .dl-resume:hover{
     top: 0px;
+    transform: scale(1.04);
 }
 .resume-btn{
     width: fit-content;
@@ -146,6 +147,7 @@
         left: 25px;
     }
     .resume-experience{
+        margin-top: 10px;
         margin-left: 25px;
     }        
     .timeline-date{
@@ -157,13 +159,14 @@
         transform: scale(1.2);
     }
     .timeline-date-title{
-        font-size: 15px;
+        font-size: 16px;
         text-align: left;
     }
     .timeline-date-description{
         width: 88%;
         border: none;
         left: 0;
+        font-size: 16px;
     }
     .divider-marker{
         display: none;

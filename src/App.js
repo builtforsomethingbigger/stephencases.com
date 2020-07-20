@@ -7,6 +7,7 @@ import Login from './components/scases/Login'
 import Bio from './components/main/Bio'
 import Portfolio from './components/main/Portfolio'
 import Resume from './components/main/Resume'
+import Contact from './components/main/Contact'
 import './styles/App.css';
 
 const resumeAPI = 'http://localhost:3001/resumes'
@@ -88,34 +89,38 @@ export default class App extends React.Component{
       <div id="App">
         <ProfileBanner />
         <Route exact path='/' render={routerProps => (
-                <Home {...routerProps} 
-                  loggedInStatus={this.state.isLoggedIn}
-                />
-              )}/>
-            <Switch>
-            <Route exact path='/login' render={routerProps => (
-              <Login  {...routerProps}
-                handleLogin={this.handleLogin} 
-                loggedInStatus={this.state.isLoggedIn} 
+          <Home {...routerProps} 
+            loggedInStatus={this.state.isLoggedIn}
+          />
+        )}/>
+        <Switch>
+          <Route exact path='/login' render={routerProps => (
+            <Login  {...routerProps}
+              handleLogin={this.handleLogin} 
+              loggedInStatus={this.state.isLoggedIn} 
+            />
+          )}/>
+          <div id="Main">
+            <Route exact path='/bio'  render={routerProps => (
+              <Bio  {...routerProps} 
+                bio={this.state.bio}
               />
             )}/>
-            <div id="Main">
-              <Route exact path='/bio'  render={routerProps => (
-                <Bio  {...routerProps} 
-                  bio={this.state.bio}
-                />
-              )}/>
-              <Route exact path='/portfolio'  render={routerProps => (
-                <Portfolio  {...routerProps} 
-                />
-              )}/>
-              <Route exact path='/resume'  render={routerProps => (
-                <Resume  {...routerProps} 
-                  entries={this.state.entries} 
-                />
-              )}/>
-              {/* <Route exact path='/crm/new-post' component={<PostForm />}/> */}
-            </div>
+            <Route exact path='/portfolio'  render={routerProps => (
+              <Portfolio  {...routerProps} 
+              />
+            )}/>
+            <Route exact path='/resume'  render={routerProps => (
+              <Resume  {...routerProps} 
+                entries={this.state.entries} 
+              />
+            )}/>
+            <Route exact path='/contact'  render={routerProps => (
+              <Contact  {...routerProps} 
+              />
+            )}/>
+            {/* <Route exact path='/crm/new-post' component={<PostForm />}/> */}
+          </div>
         </Switch>
       </div>
     )
