@@ -43,7 +43,7 @@
     color: white;
     text-shadow: 0px 0px 3px rgb(86, 86, 86);
     cursor: pointer;
-
+        
     animation-name: signin-slideUp;
     animation-duration: .6s;
     animation-iteration-count: 1;

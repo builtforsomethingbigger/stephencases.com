@@ -28,6 +28,15 @@ body{
   /* background-blend-mode: overlay; */
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 100px rgba(98, 109, 120, 0.621);
+ 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+
   animation-name: gradient;
   animation-duration: 10s;
   animation-iteration-count: infinite;

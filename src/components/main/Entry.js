@@ -12,7 +12,7 @@ const Entry = (props) => {
                     <div className="entry-description">
                         <h3 className="entry-description-company">{props.company}</h3>
                         <h4 className="entry-description-title">{props.title}</h4>
-                        {props.description.split('•').map(line => <p className="entry-description-line">{line}</p>)}<br/><br/>
+                        {props.description.split('•').map((line, index) => <p key={index} className="entry-description-line">{line}</p>)}<br/><br/>
                     </div>
                 </div>
             </li>

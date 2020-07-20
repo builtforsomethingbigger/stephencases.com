@@ -1,21 +1,26 @@
 import React from 'react'
 import Nav from '../nav/Nav'
 import {Link} from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import '../../styles/ProfileBanner.css';
 
 const ProfileBanner = () => {
 
-    const showEditBtn = e => {
-        return "block"
+    const [loginBtn, displayLoginBtn] = useState('none')
+
+    const showLogin = e => {
+        displayLoginBtn('block')
+    }
+    const hideLogin = e => {
+        displayLoginBtn('none')
     }
 
     return(
         <div id="ProfileBanner">
             <div className="menuBtn">≡</div>
-            <div id="ProfilePicture" onDoubleClick={() => showEditBtn()}>
+            <div id="ProfilePicture" onDoubleClick={() => showLogin()}>
                 <Link to='/login'>
-                    <div className="signin-btn" style={{display: showEditBtn()}}>SIGN IN</div>
+                    <div className="signin-btn" style={{display: loginBtn}} onMouseOut={() => hideLogin()}>SIGN IN</div>
                 </Link>
             </div>
             <div id="ProfileInfo">
