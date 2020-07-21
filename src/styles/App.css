@@ -20,12 +20,6 @@ body{
   width: 100%;
   min-width: 1000px;
   max-width: 1500px;
-  /* background: url('https://www.myfreetextures.com/wp-content/uploads/2011/06/brushedsteel7.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-  /* background-blend-mode: overlay; */
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 100px rgba(98, 109, 120, 0.621);
  

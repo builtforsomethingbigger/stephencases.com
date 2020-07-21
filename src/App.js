@@ -94,7 +94,7 @@ export default class App extends React.Component{
           />
         )}/>
         <Switch>
-          <Route exact path='/login' render={routerProps => (
+          <Route exact path='/signin' render={routerProps => (
             <Login  {...routerProps}
               handleLogin={this.handleLogin} 
               loggedInStatus={this.state.isLoggedIn} 
