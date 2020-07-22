@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import '../../styles/Portfolio.css';
+import PortfolioPreview from '../../images/chance-preview.jpg'
 
 const PortfolioCard = (props) => {
 
@@ -16,8 +17,11 @@ const PortfolioCard = (props) => {
 
     return(
         <div className="portfolio-card" onClick={() => expandCard()}>
-            <img src="https://drive.google.com/file/d/1aGK9msxQLJ7kL8Knn1MFsg7lIKaJXgqM/view?usp=sharing" />
-            <div className="card-info" style={{display: portfolioInfo}}></div>
+            <img className="portfolio-preview" src={PortfolioPreview} alt="portfolio-preview" />
+            <div className="card-info" style={{display: portfolioInfo}}>
+                <h1>{props.project_name}</h1>
+                {props.project_description.split('•').map((line, index) => <p key={index} className="info-description-line">{line}</p>)}<br/><br/>
+            </div>
         </div>
 
     )
