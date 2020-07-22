@@ -8,7 +8,7 @@ import ResumePDF from '../../resume/stephen-cases_resume.pdf'
     if(!props.entries) return ''
 
     return(
-        <div id="Resume">
+        <div id="Resume" className="fade-in-fx">
             <div className="dl-resume">
                 <a href={ResumePDF} className="resume-btn" download>Download Resume</a><br/>
             </div>

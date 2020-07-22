@@ -3,7 +3,7 @@ import '../../styles/Bio.css';
 
  const Bio = () => {
     return(
-        <div id="Bio">
+        <div id="Bio" className="fade-in-fx">
             <div className="bio-header">
                 <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
             </div>

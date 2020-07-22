@@ -5,7 +5,7 @@ import '../../styles/Portfolio.css';
 const Portfolio = (props) => {
 
     return(
-        <div id="Portfolio">
+        <div id="Portfolio" className="fade-in-fx">
             {props.portfolio.map(portfolio => 
                 <PortfolioCard key={portfolio.id}
                     {...portfolio}

@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
       }
     render(){
         return(
-            <div id="ContactPage">
+            <div id="ContactPage" className="fade-in-fx">
                 <div className="conact-form">
                     <div className="input-half">
                         <label className="contact-label">NAME:</label> <input type="text"></input>
