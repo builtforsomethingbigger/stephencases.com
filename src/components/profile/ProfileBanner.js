@@ -8,19 +8,20 @@ const ProfileBanner = () => {
 
     const [signInBtn, displaySignInBtn] = useState('none')
 
-    const showSignIn = e => {
-        displaySignInBtn('block')
-    }
-    const hideSignIn = e => {
-        displaySignInBtn('none')
+    const signInSetState = e => {
+        if(signInBtn === 'none'){
+            displaySignInBtn('block')
+        }else{
+            displaySignInBtn('none')
+        }
     }
 
     return(
         <div id="ProfileBanner">
             <div className="menuBtn">≡</div>
-            <div id="ProfilePicture" onDoubleClick={() => showSignIn()}>
+            <div id="ProfilePicture" onDoubleClick={() => signInSetState()}>
                 <Link to='/SignIn'>
-                    <div className="signin-btn" style={{display: signInBtn}} onMouseOut={() => hideSignIn()}>SIGN IN</div>
+                    <div className="signin-btn" style={{display: signInBtn}} onMouseOut={() => signInSetState()}>SIGN IN</div>
                 </Link>
             </div>
             <div id="ProfileInfo">

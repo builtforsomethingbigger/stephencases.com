@@ -1,23 +1,17 @@
 import React from 'react'
+import PortfolioCard from './PortfolioCard'
 import '../../styles/Portfolio.css';
 
-export default class Portfolio extends React.Component{
-    render(){
-        return(
-            <div id="Portfolio">
-                <div className="portfolio-card">
-                    <div className="card-info"></div>
-                </div>
-                <div className="portfolio-card">
-                    <div className="card-info"></div>
-                </div>
-                <div className="portfolio-card">
-                    <div className="card-info"></div>
-                </div>
-                <div className="portfolio-card">
-                    <div className="card-info"></div>
-                </div>
-            </div>
-        )
-    }
+const Portfolio = (props) => {
+
+    return(
+        <div id="Portfolio">
+            {props.portfolio.map(portfolio => 
+                <PortfolioCard key={portfolio.id}
+                    {...portfolio}
+                />
+            )}
+        </div>
+    )
 }
+export default Portfolio

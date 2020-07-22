@@ -12,6 +12,7 @@ import './styles/App.css';
 
 const resumeAPI = 'http://localhost:3001/resumes'
 const bioAPI = 'http://localhost:3001/bios'
+const portfolioAPI = 'http://localhost:3001/portfolios'
 
 export default class App extends React.Component{
 
@@ -21,7 +22,8 @@ export default class App extends React.Component{
       isLoggedIn: false,
       user: {},
       entries: [],
-      bio: []
+      bio: [],
+      portfolio: []
      };
   }  
 
@@ -30,6 +32,7 @@ export default class App extends React.Component{
     this.loginStatus()
     this.fetchResumes()
     this.fetchBio()
+    this.fetchPortfolio()
   }
 
   fetchResumes = () => {
@@ -41,6 +44,11 @@ export default class App extends React.Component{
     fetch(bioAPI)
     .then(res=>res.json())
     .then(bio => this.setState({ bio }))
+  }
+  fetchPortfolio = () => {
+    fetch(portfolioAPI)
+    .then(res=>res.json())
+    .then(portfolio => this.setState({ portfolio }))
   }
 
 
@@ -108,6 +116,7 @@ export default class App extends React.Component{
             )}/>
             <Route exact path='/portfolio'  render={routerProps => (
               <Portfolio  {...routerProps} 
+                portfolio={this.state.portfolio} 
               />
             )}/>
             <Route exact path='/resume'  render={routerProps => (
