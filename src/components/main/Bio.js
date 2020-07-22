@@ -9,7 +9,7 @@ import '../../styles/Bio.css';
             </div>
             <div className="bio-body">
                 <h2>A Little About Me...</h2>
-                <p className="bio-content">I know a little backend development using Ruby on Rails.</p>
+                <p className="bio-content">First and foremost, thank you for visiting my site. I appreciate your time and presence.</p>
                 <p className="bio-content">But I'm really into the flexibility that frontend has to offer... especially with JavaScript and frontend frameworks like ReactJS.</p>
                 <p className="bio-content">Other interests include:</p>
                 <p className="bio-content pad-L-20">- Blockchain &amp; Distributed Ledger Technology</p>

@@ -2,7 +2,7 @@ import React from 'react'
 // import {Link} from 'react-router-dom'
 import '../../styles/Login.css';
 
-const loginAPI = 'http://localhost:3001/logged_in'
+const loginAPI = 'http://localhost:3001/SignIn'
 export default class Login extends React.Component{
     constructor(props){
         super(props)
@@ -19,7 +19,7 @@ export default class Login extends React.Component{
         this.props.history.goBack();
     }
     
-    componentWillMount() {
+    componentDidMount() {
         return this.props.loggedInStatus ? this.redirect() : null
     }
 
@@ -40,12 +40,10 @@ export default class Login extends React.Component{
         
         fetch(loginAPI, {user}, {withCredentials: true}, {
             method:'GET',
-            mode: 'cors',
-            headers:{
-                'Access-Control-Allow-Origin':'*'
-            }
+            mode: 'cors'
         })
         .then(res=>res.json())
+        .then(response => console.log)
         .then(response => {
             if (response.data.logged_in) {
                 this.props.handleLogin(response.data)
@@ -99,7 +97,7 @@ export default class Login extends React.Component{
                                 onChange={this.onChangeHandler}
                             />
                         </div>
-                        {/* <button type="submit" onClick={this.submitHandler}>LOGIN</button> */}
+                        <button type="submit" onClick={this.submitHandler}>LOGIN</button>
                     </form>
                     <div>
                         <p className="go-back-text">ARE YOU LOST?<br/>HONEST MISTAKE.</p>

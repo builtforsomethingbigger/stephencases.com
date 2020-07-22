@@ -69,14 +69,10 @@ export default class App extends React.Component{
   }
 
   loginStatus = () => {
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    const loginAPI = "http://localhost:3001/login"
-    fetch((proxyurl+loginAPI), {withCredentials: true}, {
+    const loginAPI = "http://localhost:3001/SignIn"
+    fetch(loginAPI, {withCredentials: true}, {
       method:'GET',
-      mode: 'cors',
-      headers:{
-          'Access-Control-Allow-Origin':'*'
-      }
+      mode: 'cors'
     })
     .then(res=>res.json())
     .then(response => {
