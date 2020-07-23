@@ -12,12 +12,13 @@
     width: 100%;
     height: fit-content;
     top: 20px;
+    padding: 0px 80px;
 }
 .bio-intro{
     font-size: 42px;
     font-weight: bold;
     color: rgb(64, 64, 64);
-    text-align: center;
+    text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
 .bio-body{
@@ -25,7 +26,7 @@
 }
 .bio-content{
     font-size: 24px;
-    line-height: 28px;
+    line-height: 30px;
     color: rgb(64, 64, 64);
     text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
@@ -50,7 +51,11 @@
         text-shadow: 0px 0px 2px rgb(121, 133, 159);
     }
   }
-
+.little-strike{
+    font-size: 18px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+}
 
 
 @media only screen and (max-width: 724px){

@@ -28,7 +28,7 @@ const PortfolioCard = (props) => {
     return(
         <div className="portfolio-card" onClick={() => {{expandCard(); infoBtnDisplay()}}}>
             <img className="portfolio-preview" src={PortfolioPreview} alt="portfolio-preview" />
-            <div className="portfolio-more-info more-info-fx" style={{display: portfolioInfoBtn}}>(click image for more info)</div>
+            <div className="portfolio-more-info more-info-fx" style={{display: portfolioInfoBtn}}>(click card for more info)</div>
             <div className="bottom-fade"></div>
             <div className="card-info" style={{display: portfolioInfo}}>
                 <h1 className="project-title">{props.project_name}</h1>

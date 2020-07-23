@@ -2,7 +2,6 @@ import React from 'react'
 
 const Entry = (props) => {
     return(
-        <div>
             <li>
                 <div className="timeline-date">
                     <time className="timeline-date-title">{props.start_date}-{props.end_date}</time>
@@ -16,7 +15,6 @@ const Entry = (props) => {
                     </div>
                 </div>
             </li>
-        </div>
     )
 }
 export default Entry
