@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import '../styles/Home.css';
 
-const Home = () => {
+const Home = (props) => {
     const [x, setX] = useState()
     const [y, setY] = useState()
     useEffect(
@@ -33,7 +33,7 @@ const Home = () => {
                 <h1>WELCOME TO MY PROFESSIONAL PORTFOLIO!</h1>
                 <h2>{`x: ${x}; y: ${y};`}</h2>
                 <h3>{returnStatement()}</h3>
-                    
+                <h2>Status: {props.loggedInStatus}</h2>
             </div>
         </div>
     )

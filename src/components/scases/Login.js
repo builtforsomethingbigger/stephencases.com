@@ -1,8 +1,9 @@
 import React from 'react'
+import axios from 'axios'
 // import {Link} from 'react-router-dom'
 import '../../styles/Login.css';
 
-const loginAPI = 'http://localhost:3001/SignIn'
+const loginAPI = 'http://localhost:3001/sessions'
 export default class Login extends React.Component{
     constructor(props){
         super(props)
@@ -12,80 +13,80 @@ export default class Login extends React.Component{
     state = {
         username: '',
         password: '',
-        errors: ''
+        loginErrors:''
     }
 
     goBack(){
         this.props.history.goBack();
     }
-    
-    componentDidMount() {
-        return this.props.loggedInStatus ? this.redirect() : null
-    }
 
-    onChangeHandler = e => {
-        const {name, value} = e.target
+    handleChange = e => {
         this.setState({
-            [name]: value
+            [e.target.name]: e.target.value
         })
     }
-
-    submitHandler = e => {
+    
+    handleSubmit = e => {
         e.preventDefault()
-        const {username, password} = this.state
-        let user = {
-        username: username,
-        password: password
-        }
-        
-        fetch(loginAPI, {user}, {withCredentials: true}, {
-            method:'GET',
-            mode: 'cors'
-        })
-        .then(res=>res.json())
-        .then(response => console.log)
-        .then(response => {
-            if (response.data.logged_in) {
-                this.props.handleLogin(response.data)
-                this.redirect()
-            } else {
-                this.setState({
-                errors: response.data.errors
-                })
+        const { username, password } = this.state
+
+        axios.post(loginAPI, { 
+            user: {
+                username: username,
+                password: password
             }
         })
-        .catch(error => console.log('api errors:', error))
-    };
-
-    redirect = () => {
-    this.props.history.push('/')
-
-    // handleErrors = () => {
-    //     return (
-    //         <div>
-    //             <ul>
-    //                 {this.state.errors.map(error => {
-    //                     return <li key={error}>{error}</li>
-    //                 })}
-    //             </ul>
-    //         </div>
-    //     )
-    // }
+        .then(res=> {
+            // console.log('res from login', res)
+            if(res.data.logged_in){
+                this.props.handleSuccessfulAuth(res.data)
+            }
+        })
+        .catch(error => {
+            console.log('login error', error)
+        })
     }
 
+    // handleSubmit = e => {
+    //     e.preventDefault()
+    //     const { username, password } = this.state
+
+    //     fetch(loginAPI, {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             accept: 'application/json'
+    //         },
+    //         body: JSON.stringify({
+    //             user: {
+    //                 username: username,
+    //                 password: password
+    //             }
+    //         })
+    //     })
+    //     .then(res=> {
+    //         console.log('res from login', res)
+    //     })
+    //     .catch(error => {
+    //         console.log('login error', error)
+    //     })
+
+    // }
+    
+
     render(){
-        const {username, password} = this.state
         return(
             <div id="LoginPage">
                 <div className="login-card">
-                    <form onSubmit={this.submitHandler}>
+                    <form onSubmit={this.handleSubmit}>
                         <div>
                             <input 
                                 className="login-input" 
                                 type="text" 
                                 name="username" 
-                                value={username} 
-                                onChange={this.onChangeHandler}
+                                value={this.state.username}
+                                onChange={this.handleChange}
+                                required
                             />
                         </div>
                         <div>
@@ -93,12 +94,15 @@ export default class Login extends React.Component{
                                 className="login-input" 
                                 type="password" 
                                 name="password" 
-                                value={password} 
-                                onChange={this.onChangeHandler}
+                                value={this.state.password}
+                                onChange={this.handleChange}
+                                required
                             />
                         </div>
-                        <button type="submit" onClick={this.submitHandler}>LOGIN</button>
+                        <button type="submit" onClick={this.handleSubmit}>submit</button>
                     </form>
+                    <h2>Status: {this.props.loggedInStatus}</h2>
+
                     <div>
                         <p className="go-back-text">ARE YOU LOST?<br/>HONEST MISTAKE.</p>
                         <span className="go-back-link" onClick={() => {this.goBack()}}>GO BACK</span>

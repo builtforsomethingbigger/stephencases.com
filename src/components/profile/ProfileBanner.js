@@ -6,22 +6,22 @@ import '../../styles/ProfileBanner.css';
 
 const ProfileBanner = () => {
 
-    const [signInBtn, displaySignInBtn] = useState('none')
+    const [logInBtn, displayLogInBtn] = useState('none')
 
-    const signInSetState = e => {
-        if(signInBtn === 'none'){
-            displaySignInBtn('block')
+    const LogInSetState = e => {
+        if(logInBtn === 'none'){
+            displayLogInBtn('block')
         }else{
-            displaySignInBtn('none')
+            displayLogInBtn('none')
         }
     }
 
     return(
         <div id="ProfileBanner">
             <div className="menuBtn">≡</div>
-            <div id="ProfilePicture" onDoubleClick={() => signInSetState()}>
-                <Link to='/SignIn'>
-                    <div className="signin-btn" style={{display: signInBtn}} onMouseOut={() => signInSetState()}>SIGN IN</div>
+            <div id="ProfilePicture" onDoubleClick={() => LogInSetState()}>
+                <Link to='/login'>
+                    <div className="login-btn" style={{display: logInBtn}} onMouseOut={() => LogInSetState()}>LOGIN</div>
                 </Link>
             </div>
             <div id="ProfileInfo">

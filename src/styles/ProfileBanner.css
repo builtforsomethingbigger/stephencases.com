@@ -27,7 +27,7 @@
 #ProfilePicture:hover{
     box-shadow: inset 0px 0px 10px rgba(138, 169, 205, 0.5);
 }
-.signin-btn{
+.login-btn{
     position: absolute;
     display: none;
     width: 100%;
@@ -42,12 +42,12 @@
     text-shadow: 0px 0px 3px rgb(86, 86, 86);
     cursor: pointer;
         
-    animation-name: signin-slideUp;
+    animation-name: login-slideUp;
     animation-duration: .6s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
-    @keyframes signin-slideUp {
+    @keyframes login-slideUp {
     0%  {
         bottom: -40px;
     }
@@ -55,7 +55,7 @@
         bottom: 0;
     }
   }
-.signin-btn:hover{
+.login-btn:hover{
     text-shadow: 0px 0px 3px rgb(86, 86, 86);
     padding-bottom: 8px;
     bottom: 0;

@@ -16,10 +16,11 @@ const portfolioAPI = 'http://localhost:3001/portfolios'
 
 export default class App extends React.Component{
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super()
+
     this.state = { 
-      isLoggedIn: false,
+      isLoggedIn: "Not Logged In",
       user: {},
       entries: [],
       bio: [],
@@ -29,7 +30,7 @@ export default class App extends React.Component{
 
 
   componentDidMount() {
-    this.loginStatus()
+    // this.loginStatus()
     this.fetchResumes()
     this.fetchBio()
     this.fetchPortfolio()
@@ -56,34 +57,34 @@ export default class App extends React.Component{
 //LOGIN FUNCTIONS
   handleLogin = (data) => {
     this.setState({
-      isLoggedIn: true,
+      isLoggedIn: "Logged In",
       user: data.user
     })
   }
 
-  handleLogout = (data) => {
-    this.setState({
-      isLoggedIn: false,
-      user: {}
-    })
-  }
+  // handleLogout = (data) => {
+  //   this.setState({
+  //     isLoggedIn: false,
+  //     user: {}
+  //   })
+  // }
 
-  loginStatus = () => {
-    const loginAPI = "http://localhost:3001/SignIn"
-    fetch(loginAPI, {withCredentials: true}, {
-      method:'GET',
-      mode: 'cors'
-    })
-    .then(res=>res.json())
-    .then(response => {
-      if (response.data.logged_in) {
-        this.handleLogin(response)
-      } else {
-        this.handleLogout()
-      }
-    })
-    .catch(error => console.log('api errors:', error))
-  }
+  // loginStatus = () => {
+  //   const loginAPI = "http://localhost:3001/SignIn"
+  //   fetch(loginAPI, {withCredentials: true}, {
+  //     method:'GET',
+  //     mode: 'cors'
+  //   })
+  //   .then(res=>res.json())
+  //   .then(response => {
+  //     if (response.data.logged_in) {
+  //       this.handleLogin(response)
+  //     } else {
+  //       this.handleLogout()
+  //     }
+  //   })
+  //   .catch(error => console.log('api errors:', error))
+  // }
 //END LOGIN FUNCTIONS
 
 
@@ -98,30 +99,34 @@ export default class App extends React.Component{
           />
         )}/>
         <Switch>
-          <Route exact path='/signin' render={routerProps => (
+          <Route exact path='/login' render={routerProps => (
             <Login  {...routerProps}
-              handleLogin={this.handleLogin} 
+              handleSuccessfulAuth={this.handleLogin} 
               loggedInStatus={this.state.isLoggedIn} 
             />
           )}/>
           <div id="Main">
             <Route exact path='/bio'  render={routerProps => (
               <Bio  {...routerProps} 
+              loggedInStatus={this.state.isLoggedIn}
                 bio={this.state.bio}
               />
             )}/>
             <Route exact path='/portfolio'  render={routerProps => (
               <Portfolio  {...routerProps} 
+                loggedInStatus={this.state.isLoggedIn}
                 portfolio={this.state.portfolio} 
               />
             )}/>
             <Route exact path='/resume'  render={routerProps => (
               <Resume  {...routerProps} 
+                loggedInStatus={this.state.isLoggedIn}
                 entries={this.state.entries} 
               />
             )}/>
             <Route exact path='/contact'  render={routerProps => (
               <Contact  {...routerProps} 
+                loggedInStatus={this.state.isLoggedIn}
               />
             )}/>
             {/* <Route exact path='/crm/new-post' component={<PostForm />}/> */}
