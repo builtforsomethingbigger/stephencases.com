@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import '../../styles/Login.css';
 
 const loginAPI = 'http://localhost:3001/sessions'
@@ -39,12 +39,14 @@ export default class Login extends React.Component{
         .then(res=> {
             // console.log('res from login', res)
             if(res.data.logged_in){
+                window.sessionStorage.setItem('username', username)
                 this.props.handleSuccessfulAuth(res.data)
             }
         })
         .catch(error => {
             console.log('login error', error)
         })
+        this.goBack()
     }
 
     // handleSubmit = e => {
@@ -78,31 +80,29 @@ export default class Login extends React.Component{
         return(
             <div id="LoginPage">
                 <div className="login-card">
-                    <form onSubmit={this.handleSubmit}>
-                        <div>
-                            <input 
-                                className="login-input" 
-                                type="text" 
-                                name="username" 
-                                value={this.state.username}
-                                onChange={this.handleChange}
-                                required
-                            />
-                        </div>
-                        <div>
-                            <input 
-                                className="login-input" 
-                                type="password" 
-                                name="password" 
-                                value={this.state.password}
-                                onChange={this.handleChange}
-                                required
-                            />
-                        </div>
-                        <button type="submit" onClick={this.handleSubmit}>submit</button>
-                    </form>
-                    <h2>Status: {this.props.loggedInStatus}</h2>
-
+                        <form onSubmit={this.handleSubmit}>
+                            <div>
+                                <input 
+                                    className="login-input" 
+                                    type="text" 
+                                    name="username" 
+                                    value={this.state.username}
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <input 
+                                    className="login-input" 
+                                    type="password" 
+                                    name="password" 
+                                    value={this.state.password}
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                            </div>
+                            <button type="submit"></button>
+                        </form>
                     <div>
                         <p className="go-back-text">ARE YOU LOST?<br/>HONEST MISTAKE.</p>
                         <span className="go-back-link" onClick={() => {this.goBack()}}>GO BACK</span>

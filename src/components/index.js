@@ -6,4 +6,4 @@ export { default as Portfolio } from './main/Portfolio';
 export { default as Resume } from './main/Resume';
 export { default as Contact } from './main/Contact';
 export { default as Login } from './scases/Login';
-export { default as PostForm } from './scases/PostForm';
+export { default as CMS } from './scases/CMS';

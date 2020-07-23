@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import ProfileBanner from './components/profile/ProfileBanner'
 import Login from './components/scases/Login'
-// import PostForm from './components/scases/PostForm'
+import CMS from './components/scases/CMS'
 import Bio from './components/main/Bio'
 import Portfolio from './components/main/Portfolio'
 import Resume from './components/main/Resume'
@@ -30,10 +30,10 @@ export default class App extends React.Component{
 
 
   componentDidMount() {
-    // this.loginStatus()
     this.fetchResumes()
     this.fetchBio()
     this.fetchPortfolio()
+    // this.setCurrentUser()
   }
 
   fetchResumes = () => {
@@ -59,6 +59,15 @@ export default class App extends React.Component{
     this.setState({
       isLoggedIn: "Logged In",
       user: data.user
+    })
+  }
+
+  setCurrentUser = () => {
+    this.setState({
+      isLoggedIn: "Logged In",
+      user: {
+        username: window.sessionStorage.getItem('username')
+      }
     })
   }
 
@@ -92,45 +101,47 @@ export default class App extends React.Component{
   render(){
     return(
       <div id="App">
-        <ProfileBanner />
-        <Route exact path='/' render={routerProps => (
-          <Home {...routerProps} 
-            loggedInStatus={this.state.isLoggedIn}
-          />
-        )}/>
+        <ProfileBanner user={this.state.user}/>
         <Switch>
+          <Route exact path='/' render={routerProps => (
+            <Home {...routerProps} 
+              loggedInStatus={this.state.isLoggedIn}
+            />
+          )}/>
           <Route exact path='/login' render={routerProps => (
             <Login  {...routerProps}
               handleSuccessfulAuth={this.handleLogin} 
               loggedInStatus={this.state.isLoggedIn} 
             />
           )}/>
-          <div id="Main">
-            <Route exact path='/bio'  render={routerProps => (
-              <Bio  {...routerProps} 
-              loggedInStatus={this.state.isLoggedIn}
-                bio={this.state.bio}
-              />
-            )}/>
-            <Route exact path='/portfolio'  render={routerProps => (
-              <Portfolio  {...routerProps} 
+            <div id="Main">
+              <Route exact path='/bio'  render={routerProps => (
+                <Bio  {...routerProps} 
                 loggedInStatus={this.state.isLoggedIn}
-                portfolio={this.state.portfolio} 
-              />
-            )}/>
-            <Route exact path='/resume'  render={routerProps => (
-              <Resume  {...routerProps} 
-                loggedInStatus={this.state.isLoggedIn}
-                entries={this.state.entries} 
-              />
-            )}/>
-            <Route exact path='/contact'  render={routerProps => (
-              <Contact  {...routerProps} 
-                loggedInStatus={this.state.isLoggedIn}
-              />
-            )}/>
-            {/* <Route exact path='/crm/new-post' component={<PostForm />}/> */}
-          </div>
+                  bio={this.state.bio}
+                />
+              )}/>
+              <Route exact path='/portfolio'  render={routerProps => (
+                <Portfolio  {...routerProps} 
+                  loggedInStatus={this.state.isLoggedIn}
+                  portfolio={this.state.portfolio} 
+                />
+              )}/>
+              <Route exact path='/resume'  render={routerProps => (
+                <Resume  {...routerProps} 
+                  loggedInStatus={this.state.isLoggedIn}
+                  entries={this.state.entries} 
+                />
+              )}/>
+              <Route exact path='/contact'  render={routerProps => (
+                <Contact  {...routerProps} 
+                  loggedInStatus={this.state.isLoggedIn}
+                />
+              )}/>
+              <Route exact path='/cms'  render={routerProps => (
+                <CMS {...routerProps} />
+              )}/>
+            </div>
         </Switch>
       </div>
     )

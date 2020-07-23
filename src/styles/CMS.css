@@ -1,0 +1,9 @@
+#Control{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: scroll;
+    background-color: rgb(180, 196, 222);
+}

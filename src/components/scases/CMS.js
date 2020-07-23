@@ -1,10 +1,10 @@
 import React from 'react'
-import '../../styles/PostForm.css';
+import '../../styles/CMS.css';
 
-export default class PostForm extends React.Component{
+export default class CMS extends React.Component{
     render(){
         return(
-            <div id="PostForm">
+            <div id="Control" className="fade-in-fx">
                 <div>
                     <select>
                         <option default>Sir, what would you like to </option>

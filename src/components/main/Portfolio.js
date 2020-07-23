@@ -6,6 +6,7 @@ const Portfolio = (props) => {
 
     return(
         <div id="Portfolio" className="fade-in-fx">
+            <div><h1>MY PORTFOLIO</h1></div>
             {props.portfolio.map(portfolio => 
                 <PortfolioCard key={portfolio.id}
                     {...portfolio}

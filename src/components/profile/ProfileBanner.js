@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import {useState} from 'react'
 import '../../styles/ProfileBanner.css';
 
-const ProfileBanner = () => {
+const ProfileBanner = (props) => {
 
     const [logInBtn, displayLogInBtn] = useState('none')
 
@@ -27,7 +27,7 @@ const ProfileBanner = () => {
             <div id="ProfileInfo">
                 <span className="profile-name">Stephen Cases</span>
                 <span className="profile-title">Full-Stack Developer</span>
-                <Nav />
+                <Nav user={props.user}/>
             </div>
         </div>
     )
