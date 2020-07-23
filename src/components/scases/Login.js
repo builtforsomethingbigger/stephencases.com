@@ -101,7 +101,7 @@ export default class Login extends React.Component{
                                     required
                                 />
                             </div>
-                            <button type="submit"></button>
+                            <button type="submit" style={{display: 'none'}}></button>
                         </form>
                     <div>
                         <p className="go-back-text">ARE YOU LOST?<br/>HONEST MISTAKE.</p>

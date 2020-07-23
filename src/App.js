@@ -96,18 +96,26 @@ export default class App extends React.Component{
   // }
 //END LOGIN FUNCTIONS
 
-
+showCMS = () => {
+  if(this.state.user.username){
+    return (
+      <Route exact path='/cms'  render={routerProps => (
+        <CMS {...routerProps} />
+      )}/>
+    )
+  }
+}
 
   render(){
     return(
       <div id="App">
         <ProfileBanner user={this.state.user}/>
         <Switch>
-          <Route exact path='/' render={routerProps => (
+          {/* <Route exact path='/' render={routerProps => (
             <Home {...routerProps} 
               loggedInStatus={this.state.isLoggedIn}
             />
-          )}/>
+          )}/> */}
           <Route exact path='/login' render={routerProps => (
             <Login  {...routerProps}
               handleSuccessfulAuth={this.handleLogin} 
@@ -115,7 +123,7 @@ export default class App extends React.Component{
             />
           )}/>
             <div id="Main">
-              <Route exact path='/bio'  render={routerProps => (
+              <Route exact path='/'  render={routerProps => (
                 <Bio  {...routerProps} 
                 loggedInStatus={this.state.isLoggedIn}
                   bio={this.state.bio}
@@ -138,9 +146,7 @@ export default class App extends React.Component{
                   loggedInStatus={this.state.isLoggedIn}
                 />
               )}/>
-              <Route exact path='/cms'  render={routerProps => (
-                <CMS {...routerProps} />
-              )}/>
+              {this.showCMS()}
             </div>
         </Switch>
       </div>

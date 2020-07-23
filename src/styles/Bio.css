@@ -22,13 +22,19 @@
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
 .tldr-btn{
+    width: fit-content;
+    margin-top: -20px;
+    margin-bottom: 50px;
     font-size: 22px;
-    padding: 3px;
-    border: 1px solid rgb(71, 93, 144);
+    padding: 3px 5px;
+    border: 1px solid rgb(211, 220, 241);
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
+    box-shadow: 0px 0px 5px rgba(138, 169, 205, 0.8);
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
     cursor: pointer;
+}
+.tldr-btn:hover{
+    box-shadow: inset 0px 0px 8px rgba(138, 169, 205, 0.8);
 }
 .bio-body{
     padding: 0px 80px;

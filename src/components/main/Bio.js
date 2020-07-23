@@ -1,16 +1,29 @@
 import React from 'react'
+import {useState} from 'react'
 import '../../styles/Bio.css';
 
  const Bio = () => {
+
+    const [bioContent, bioContentDisplay] = useState ('block')
+
+    const expandCard = e => {
+        if(bioContent === 'block'){
+            bioContentDisplay('none')
+        }else{
+            bioContentDisplay('block')
+        }
+    }
+
     return(
         <div id="Bio" className="fade-in-fx">
             {/* <div className="bio-header">
             </div> */}
             <div className="bio-body">
                 <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
-                <h2>A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lot About Me...&nbsp;&nbsp;&nbsp;<span className="tldr-btn">TL;DR</span></h2>
+                <h2>A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lot About Me...&nbsp;&nbsp;&nbsp;
+                    <span className="tldr-btn" onClick={() => expandCard()}>{`<TL;DR>`}</span></h2>
                 <div className="little-strike"><s>Little</s></div>
-                <div className="bio-content-wrapper">
+                <div className="bio-content-wrapper" style={{display: bioContent}}>
                     <p className="bio-content">
                         First and foremost, thank you for visiting my site. I appreciate your time and interest.
                         <br/><br/>                    
@@ -30,17 +43,57 @@ import '../../styles/Bio.css';
                 </div>
                 <h1 className="bio-intro">21 QUESTIONS:</h1>
                 <p className="bio-content">
+                    <b>What are you currently working on?</b>
+                </p>
+                <p className="bio-content pad-L-20">
+                    <table width="100%" cellPadding="0" cellSpacing="0" border="0">
+                        <tr>
+                            <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                            <td align="left">Building out small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
+                            <i>I will post them to my portfolio so stay tuned!</i></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                            <td align="left">Learning more about the JestJS Testing Framework</td>
+                        </tr>
+                    </table>
+                </p>
+                <p className="bio-content">
                     <b>What do I love about Software Engineering?</b>
                 </p>
                 <p className="bio-content pad-L-20">
-                    - It's pure creation. You literally turn a blank page into something that can potentially be used by millions (<i>if not billions</i>)!
-                </p>
+                    <table width="100%" cellPadding="0" cellSpacing="0" border="0">
+                        <tr>
+                            <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                            <td align="left">It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
+                        </tr>
+                        <tr>
+                            <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                            <td align="left">It’s claiming my stake in the future. Developers are integral in the existence of technologies that advance our society and I feel obliged to contribute to that effort with something that inspires me.</td>
+                        </tr>
+                    </table>
+                </p>                
                 <p className="bio-content">
                     <b>Other interests include:</b>
                 </p>
-                <p className="bio-content pad-L-20">
-                    - Blockchain &amp; Distributed Ledger Technology<br/>
-                    - Photography and Photo Editing
+                <p className="bio-content pad-L-20 pad-B-200">
+                    <table width="100%" cellPadding="0" cellSpacing="0" border="0">
+                        <tr>
+                            <td colSpan="2"></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                            <td align="left">Blockchain &amp; Distributed Ledger Technology</td>
+                        </tr>
+                        <tr>
+                            <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                            <td align="left">Crypto Currency and ForEx Trading</td>
+                        </tr>
+                        <tr>
+                            <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                            <td align="left">Photography and Photo Editing</td>
+                        </tr>
+                    </table>
                 </p>
             </div>
         </div>
