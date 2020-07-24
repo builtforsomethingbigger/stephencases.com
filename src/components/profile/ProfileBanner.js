@@ -18,7 +18,7 @@ const ProfileBanner = (props) => {
 
     return(
         <div id="ProfileBanner">
-            <div className="menuBtn">≡</div>
+            <div className="menuBtn" onClick={props.showMobileNav}>≡</div>
             <div id="ProfilePicture" onDoubleClick={() => LogInSetState()}>
                 <Link to='/login'>
                     <div className="login-btn" style={{display: logInBtn}} onMouseOut={() => LogInSetState()}>LOGIN</div>

@@ -1,5 +1,6 @@
 export { default as Home } from './Home';
 export { default as Nav } from './nav/Nav';
+export { default as MobileNav } from './nav/MobileNav';
 export { default as ProfileBanner } from './profile/ProfileBanner';
 export { default as Bio } from './main/Bio';
 export { default as Portfolio } from './main/Portfolio';

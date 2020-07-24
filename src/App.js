@@ -8,6 +8,7 @@ import Portfolio from './components/main/Portfolio'
 import Resume from './components/main/Resume'
 import Contact from './components/main/Contact'
 import './styles/App.css';
+import MobileNav from './components/nav/MobileNav';
 
 const resumeAPI = 'https://stephen-cases-backend.herokuapp.com/resumes'
 const bioAPI = 'https://stephen-cases-backend.herokuapp.com/bios'
@@ -23,7 +24,8 @@ export default class App extends React.Component{
       user: {},
       entries: [],
       bio: [],
-      portfolio: []
+      portfolio: [],
+      mobileNav: false
      };
   }  
 
@@ -70,45 +72,42 @@ export default class App extends React.Component{
     })
   }
 
-  // handleLogout = (data) => {
-  //   this.setState({
-  //     isLoggedIn: false,
-  //     user: {}
-  //   })
-  // }
-
-  // loginStatus = () => {
-  //   const loginAPI = "http://localhost:3001/SignIn"
-  //   fetch(loginAPI, {withCredentials: true}, {
-  //     method:'GET',
-  //     mode: 'cors'
-  //   })
-  //   .then(res=>res.json())
-  //   .then(response => {
-  //     if (response.data.logged_in) {
-  //       this.handleLogin(response)
-  //     } else {
-  //       this.handleLogout()
-  //     }
-  //   })
-  //   .catch(error => console.log('api errors:', error))
-  // }
-//END LOGIN FUNCTIONS
-
-showCMS = () => {
-  if(this.state.user.username){
-    return (
-      <Route exact path='/cms'  render={routerProps => (
-        <CMS {...routerProps} />
-      )}/>
-    )
+  showMobileNav = e => {
+    if(this.state.mobileNav){
+      this.setState({
+        mobileNav: false
+      })
+    }else{
+      this.setState({
+        mobileNav: true
+      })
+    }
   }
-}
+
+  hideMobileNav = e => {
+    if(this.state.mobileNav){
+      this.setState({
+        mobileNav: false
+      })
+    }
+  }
+
+  showCMS = () => {
+    if(this.state.user.username){
+      return (
+        <Route exact path='/cms'  render={routerProps => (
+          <CMS {...routerProps} />
+        )}/>
+      )
+    }
+  }
 
   render(){
     return(
       <div id="App">
-        <ProfileBanner user={this.state.user}/>
+        <ProfileBanner user={this.state.user}
+          showMobileNav={this.showMobileNav}
+        />
         <Switch>
           {/* <Route exact path='/' render={routerProps => (
             <Home {...routerProps} 
@@ -120,8 +119,9 @@ showCMS = () => {
               handleSuccessfulAuth={this.handleLogin} 
               loggedInStatus={this.state.isLoggedIn} 
             />
-          )}/>
+            )}/>
             <div id="Main">
+              <MobileNav mobileNav={this.state.mobileNav} hideMobileNav={this.hideMobileNav}/>
               <Route exact path='/'  render={routerProps => (
                 <Bio  {...routerProps} 
                 loggedInStatus={this.state.isLoggedIn}
