@@ -37,7 +37,8 @@ input{
     font-size: 15px;
     padding-left: 4px;
     border: none;
-    box-shadow: inset 0px 0px 5px rgba(28, 76, 130, 0.6);
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
 }
 .msg-input{
     width: 98%;
@@ -48,7 +49,8 @@ input{
     font-size: 15px;
     text-align: left;
     border: none;
-    box-shadow: inset 0px 0px 5px rgba(28, 76, 130, 0.6);
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
 }
 .contact-label{
     font-weight: bold;
