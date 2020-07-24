@@ -1,7 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
 import '../../styles/Portfolio.css';
-import PortfolioPreview from '../../images/chance-preview.jpg'
 
 const PortfolioCard = (props) => {
 
@@ -27,7 +26,7 @@ const PortfolioCard = (props) => {
 
     return(
         <div className="portfolio-card" onClick={() => {{expandCard(); infoBtnDisplay()}}}>
-            <img className="portfolio-preview" src={PortfolioPreview} alt="portfolio-preview" />
+            <img className="portfolio-preview" src={props.image_url} alt="portfolio-preview" />
             <div className="portfolio-more-info more-info-fx" style={{display: portfolioInfoBtn}}>(click card for more info)</div>
             <div className="bottom-fade"></div>
             <div className="card-info" style={{display: portfolioInfo}}>

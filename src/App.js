@@ -1,6 +1,5 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom'
-import Home from './components/Home'
 import ProfileBanner from './components/profile/ProfileBanner'
 import Login from './components/scases/Login'
 import CMS from './components/scases/CMS'
