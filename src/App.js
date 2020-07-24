@@ -9,9 +9,9 @@ import Resume from './components/main/Resume'
 import Contact from './components/main/Contact'
 import './styles/App.css';
 
-const resumeAPI = 'http://www.stephen-cases-backend.herokuapp.com/resumes'
-const bioAPI = 'http://www.stephen-cases-backend.herokuapp.com/bios'
-const portfolioAPI = 'http://www.stephen-cases-backend.herokuapp.com/portfolios'
+const resumeAPI = 'https://stephen-cases-backend.herokuapp.com/resumes'
+const bioAPI = 'https://stephen-cases-backend.herokuapp.com/bios'
+const portfolioAPI = 'https://stephen-cases-backend.herokuapp.com/portfolios'
 
 export default class App extends React.Component{
 
