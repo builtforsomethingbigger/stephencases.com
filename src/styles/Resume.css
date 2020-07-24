@@ -161,6 +161,7 @@
         font-size: 14.5px;
     }
     .resume-header{
+        width: 88%;
         text-align: left;
         left: 25px;
     }
@@ -181,7 +182,7 @@
         text-align: left;
     }
     .timeline-date-description{
-        width: 88%;
+        width: 86%;
         border: none;
         left: 0;
         font-size: 16px;
