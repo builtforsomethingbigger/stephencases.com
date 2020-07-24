@@ -25,7 +25,7 @@ import '../../styles/Bio.css';
                 </p>
                 <div className="bio-content-wrapper" style={{display: bioContent}}>
                     <h1><s>A Little</s> About Me...&nbsp;&nbsp; <span className="tldr-btn" onClick={() => expandCard()}>{`<TL;DR>`}</span></h1>
-                    <div className="lot-strike">QUITE A BIT</div>
+                    <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content">
                         First and foremost, thank you for visiting my site. I appreciate your time and interest.
                         <br/><br/>
@@ -44,8 +44,21 @@ import '../../styles/Bio.css';
                     </p>
                     <br/>
                 </div>
-                <div className="twentyOneQs">
-                    <h1 className="bio-intro">21 QUESTIONS:</h1>
+                <div className="status-check">
+                    <h1 className="bio-intro">Status Check:</h1>
+                    <p className="bio-content pad-T-20">
+                        <b>Employment Status</b>
+                    </p>
+                    <div className="bio-content pad-L-20">
+                        <table width="100%" cellPadding="0" cellSpacing="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
+                                    <td align="left"  style={{lineHeight: 1.5, paddingBottom: 20}}><i>Currently entertaining new opportunities to grow as a Software Engineer.</i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <p className="bio-content pad-T-20">
                         <b>What are you currently working on?</b>
                     </p>
@@ -64,7 +77,7 @@ import '../../styles/Bio.css';
                             </tbody>
                         </table>
                     </div>
-                    <p className="bio-content">
+                    <p className="bio-content pad-T-20">
                         <b>What do I love about Software Engineering?</b>
                     </p>
                     <div className="bio-content pad-L-20">
@@ -81,7 +94,7 @@ import '../../styles/Bio.css';
                             </tbody>
                         </table>
                     </div>                
-                    <p className="bio-content">
+                    <p className="bio-content pad-T-20">
                         <b>Other interests include:</b>
                     </p>
                     <div className="bio-content pad-L-20 pad-B-200">

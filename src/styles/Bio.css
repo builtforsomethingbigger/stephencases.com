@@ -99,7 +99,7 @@
     text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
-.lot-strike{
+.aBit{
     position: relative;
     display: block;
     top: -128px;
@@ -109,12 +109,12 @@
     font-weight: bold;
     color: rgba(255, 255, 255, .9);
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.6);
     -webkit-transform: rotate(-8deg);
     -ms-transform: rotate(-8deg); 
     transform: rotate(-8deg);
 }
-.twentyOneQs{
+.status-check{
     position: relative;
     display: block;
     top: -30px;

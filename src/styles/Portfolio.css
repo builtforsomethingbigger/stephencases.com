@@ -6,6 +6,13 @@
     text-align: center;
     overflow: scroll;
 }
+.portfolio-header{
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+}
+
 .card-row{
     position: relative;
     display: inline-block;
@@ -20,7 +27,7 @@
     height: fit-content;
     box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
     border: 2px solid rgba(143, 166, 205, 0.3);
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 2%;
     cursor: pointer;
 }
@@ -30,12 +37,12 @@
 .portfolio-preview{
     width: 100%;
     overflow: hidden;
+    border-radius: 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-blend-mode: overlay;
-      overflow: hidden;
 }
 .bottom-fade{
     position: relative;
@@ -44,6 +51,7 @@
     height: 120px;
     margin-top: -140px;
     margin-bottom: 0px;
+    border-radius: 20px;
     background: linear-gradient(
         to bottom, 
         rgba(255, 255, 255, 0) 0%,
@@ -77,8 +85,10 @@
     width: 100%;
     height: fit-content;
     text-align: left;
-    background-color: rgba(190, 208, 236, 0.327);
+    background-color: rgb(231, 238, 249);
     cursor: default;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     animation-name: displayPortfolioInfo;
     animation-duration: .6s;
