@@ -56,6 +56,10 @@ input:hover{
     border-radius: 8px;
     box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
 }
+.msg-input:hover{
+    box-shadow: inset 0px 0px 10px rgba(10, 50, 95, 0.7);
+}
+
 .contact-label{
     font-weight: bold;
     color: rgb(75, 141, 217);
