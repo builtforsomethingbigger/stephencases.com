@@ -51,30 +51,42 @@
     text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
-.tldr-btn{
-    /* position: relative;
-    display: block; */
-    width: fit-content;
-    margin-bottom: 50px;
+.tldr{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin-top: -50px;
     font-size: 18px;
     font-weight: bold;
     background: linear-gradient(
         to bottom, 
-        rgba(200, 210, 215) 2%,
-        rgba(243, 246, 246) 33%,
-        rgba(243, 246, 246) 66%,
-        rgba(200, 210, 215) 100%
+        rgb(255, 255, 255) 0%,
+        rgba(255, 255, 255) 45%,
+        rgb(196, 206, 214) 49%,
+        rgb(118, 135, 149) 51%,
+        rgba(255, 255, 255) 55%,
+        rgba(255, 255, 255) 100%
     ); 
 
-    padding: 3px 15px;
-    border: 1px solid rgb(211, 220, 241);
     border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(138, 169, 205, 0.8);
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+    text-align: center;
     cursor: pointer;
 }
 .tldr-btn:hover{
     box-shadow: inset 0px 0px 8px rgba(138, 169, 205, 0.8);
+}
+.tldr-text{
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+    background-color: white;
+    font-size: 25px;
+    color: rgb(118, 135, 149);
+    text-shadow: 0px 1px 3px rgb(69, 69, 69);
+    text-align: center;
 }
 .bio-body{
     padding: 0px 80px;
@@ -102,7 +114,7 @@
 .aBit{
     position: relative;
     display: block;
-    top: -128px;
+    top: -130px;
     left: -10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 24px;

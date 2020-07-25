@@ -24,6 +24,13 @@
     height: fit-content;
     top: 50px;
     padding: 20px;
+    background: linear-gradient(
+        to bottom right, 
+        rgb(226, 230, 244) 0%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 60%,
+        rgb(209, 214, 224) 100%
+    ); 
     border-radius: 25px;
     box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
 }
@@ -36,7 +43,7 @@ input{
     font-family: sans-serif;
     font-size: 15px;
     padding-left: 8px;
-    border: 1px solid rgb(75, 141, 217);
+    border: 1px solid rgb(166, 180, 195);
     border-radius: 8px;
     box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
 }
@@ -53,6 +60,7 @@ input:hover{
     padding: 8px;
     text-align: left;
     border: none;
+    border: 1px solid rgb(166, 180, 195);
     border-radius: 8px;
     box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
 }
@@ -78,10 +86,23 @@ input:hover{
 .contact-submit-btn{
     width: fit-content;
     height: fit-content;
-    padding: 8px 15px;
-    border: 1px solid rgb(75, 141, 217);
+    padding: 8px 25px;
+    border: 2px solid rgb(124, 180, 243);
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
+    background: linear-gradient(
+        to bottom, 
+        rgb(136, 199, 231) 2%,
+        rgba(75, 141, 217) 33%,
+        rgba(75, 141, 217) 66%,
+        rgba(136, 199, 231) 100%
+    ); 
+    box-shadow: 0px 2px 8px rgb(145, 165, 188);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.contact-submit-btn:hover{
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5);
 }
 .thank-you-reponse{
     position: relative;

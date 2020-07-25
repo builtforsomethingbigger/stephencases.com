@@ -24,7 +24,10 @@ import '../../styles/Bio.css';
                     <b className="text-blue">let</b>&nbsp;<b className="text-green">fullStackDeveloper</b>&nbsp;<b className="text-red">= {`[`}</b>&nbsp;HTML, CSS, JavaScript, ReactJS, Ruby on Rails <b className="text-red">{`]`}</b>
                 </p>
                 <div className="bio-content-wrapper" style={{display: bioContent}}>
-                    <h1><s>A Little</s> About Me...&nbsp;&nbsp; <span className="tldr-btn" onClick={() => expandCard()}>{`<TL;DR>`}</span></h1>
+                    <div className="tldr" onClick={() => expandCard()}>
+                        <p className="tldr-text">TL;DR</p>
+                    </div>
+                    <h1><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content">
                         First and foremost, thank you for visiting my site. I appreciate your time and interest.
