@@ -54,7 +54,7 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.5, paddingBottom: 20}}><i>Currently entertaining new opportunities to grow as a Software Engineer.</i></td>
+                                    <td align="left"  style={{lineHeight: 1.5, paddingBottom: 20}}>Currently entertaining new opportunities to grow as a Software Engineer.</td>
                                 </tr>
                             </tbody>
                         </table>
