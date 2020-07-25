@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import '../../styles/Login.css';
 
-const loginAPI = 'http://localhost:3001/sessions'
+const loginAPI = 'https://stephen-cases-backend.herokuapp.com/sessions'
 export default class Login extends React.Component{
     constructor(props){
         super(props)
