@@ -44,9 +44,9 @@ input:hover{
     box-shadow: inset 0px 0px 10px rgba(10, 50, 95, 0.7);
 }
 .msg-input{
-    width: 95%;
-    min-width: 95%;
-    max-width: 95%;
+    width: 96%;
+    min-width: 96%;
+    max-width: 96%;
     height: 100px;
     font-family: sans-serif;
     font-size: 15px;
