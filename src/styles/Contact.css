@@ -37,8 +37,11 @@ input{
     font-size: 15px;
     padding-left: 4px;
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
+}
+input:hover{
+    box-shadow: inset 0px 0px 10px rgba(10, 50, 95, 0.7);
 }
 .msg-input{
     width: 98%;
