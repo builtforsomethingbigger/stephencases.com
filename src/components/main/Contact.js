@@ -84,7 +84,7 @@ export default class Contact extends React.Component {
                                 onChange={this.handleChange.bind(this)}
                             ></textarea>
                         </div>
-                        <button type="submit">SEND</button>
+                        <button className="contact-submit-btn" type="submit">SEND</button>
                     </form>
                 </div>
                 <div className={this.state.thanks ? "thank-you-reponse" : "none"}>

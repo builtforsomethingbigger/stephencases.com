@@ -75,6 +75,14 @@ input:hover{
     font-weight: bold;
     text-align: left;
 }
+.contact-submit-btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 15px;
+    border: 1px solid rbg(75, 141, 217);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
+}
 .thank-you-reponse{
     position: relative;
     display: inline-block;
