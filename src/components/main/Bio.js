@@ -21,15 +21,13 @@ import '../../styles/Bio.css';
             <div className="bio-body">
                 <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
                 <p className="bio-content-skills">
-                    <b className="text-blue">let</b>&nbsp;<b className="text-green">fullStackDeveloper</b>&nbsp;<b className="text-red">= {`[`}</b>&nbsp;<span className="text-white">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-red">{`]`}</b>
+                    <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b>&nbsp;<b className="text-fushia">= {`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
                 </p>
-                <div className="tldr-outer" onClick={() => expandCard()}>
-                    <div className="tldr-btn">
-                        <p className="tldr-text">TL;DR</p>
-                    </div>
+                <div className="tldr-btn" onClick={() => expandCard()}>
+                    <p className="tldr-text">TL;DR</p>
                 </div>
                 <div className="bio-content-wrapper" style={{display: bioContent}}>
-                    <h1><s>A Little</s> About Me...</h1>
+                    <h1 className="bio-intro-status"><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content">
                         First and foremost, thank you for visiting my site. I appreciate your time and interest.
@@ -45,13 +43,13 @@ import '../../styles/Bio.css';
                         So, what to do? I had several opportunites lined up to continue my career with digital marketing, however, I realized I wasn't truly happy. After weighing my options, I decided to take another leap of faith and enrolled into the Flatiron School's Software Engineering program. For the next hundred-plus days, I was immersed in the world of full-stack development - learning core concepts of object-oriented programming, backend languages and frameworks such as Ruby on Rails, frontend languages and frameworks with JavaScript and ReactJS, as well as RESTful API and more.
                         <br/><br/>                    
                         Now, I'm ready and eager to start this new career path. Having over a decade of experience with frontend development, coupled with my new found skills with software engineering, I feel that the sky's the limit!
-                        <br/><br/> 
+                        <br/><br/><br/>
                     </p>
                     <br/>
                 </div>
                 <div className="status-check">
-                    <h1 className="bio-intro">Status Check:</h1>
-                    <p className="bio-content pad-T-20">
+                    <p className="bio-intro-status">Status Check:</p>
+                    <p className="bio-content">
                         <b className="text-blue">Employment Status</b>
                     </p>
                     <div className="bio-content pad-L-20">

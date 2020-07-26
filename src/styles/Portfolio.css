@@ -7,6 +7,7 @@
     overflow: scroll;
 }
 .portfolio-header{
+    margin-top: 50px;
     font-size: 42px;
     font-weight: bold;
     color: rgb(64, 64, 64);
@@ -134,7 +135,9 @@
 
 
 @media only screen and (max-width: 724px){
-
+    .portfolio-card{
+        width: 95%;
+    }
     .project-title{
         font-size: 25px;
     }

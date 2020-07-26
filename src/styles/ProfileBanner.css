@@ -7,6 +7,7 @@
     height: 100vh;
     text-align: center;
     overflow: hidden;
+    z-index: 10;
 }
 .menuBtn{
     display: none;
@@ -146,9 +147,9 @@
     }
     .profile-name{
         text-align: left;
-        top: -35px;
-        left: 140px;
-        font-size: 24px;
+        top: -45px;
+        left: 145px;
+        font-size: 27px;
         font-weight: bold;
     }
     .profile-title{
@@ -156,8 +157,8 @@
         display: inline-block;
         text-align: left;
         width: 100%;
-        top: -35px;
-        left: 140px;
-        font-size: 16px;
+        top: -45px;
+        left: 145px;
+        font-size: 20px;
     }
 }
