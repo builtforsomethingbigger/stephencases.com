@@ -176,7 +176,7 @@
 
 @media only screen and (max-width: 724px){
     .bio-intro{
-        font-size: 27px;
+        font-size: 25px;
         padding-bottom: 40px;
     }
     .bio-content-skills{
@@ -205,9 +205,9 @@
     }
     .aBit{
         top: -85px;
-        left: -2px;
+        left: -4px;
     }
     .bio-intro-status{
-        font-size: 30px;
+        font-size: 28px;
     }
 }
