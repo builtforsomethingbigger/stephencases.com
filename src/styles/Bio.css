@@ -162,7 +162,7 @@
         padding-bottom: 40px;
     }
     .bio-content-skills{
-        font-size: 24px;
+        font-size: 22px;
         line-height: 30px;
         margin-bottom: 40px;
     }
@@ -186,7 +186,10 @@
         padding: 0px 30px;
     }
     .aBit{
-        top: -138px;
-        left: 8px;
+        top: -85px;
+        left: -2px;
+    }
+    .bio-intro-status{
+        font-size: 30px;
     }
 }
