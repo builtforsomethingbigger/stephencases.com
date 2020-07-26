@@ -70,12 +70,12 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.5}}>Building out small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
+                                    <td align="left"  style={{lineHeight: 1.8}}>Building out small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
                                     <i>I will post them to my portfolio so stay tuned!</i></td>
                                 </tr>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.5, paddingBottom: 20}}>Learning more about the JestJS Testing Framework</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Learning more about the JestJS Testing Framework</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -88,11 +88,11 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.5}}>It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
+                                    <td align="left"  style={{lineHeight: 1.8}}>It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
                                 </tr>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.5, paddingBottom: 20}}>It’s claiming my stake in the future. Developers are integral in the existence of technologies that advance our society and I feel obliged to contribute to that effort with something that inspires me.</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>It’s claiming my stake in the future. Developers are integral in the existence of technologies that advance our society and I feel obliged to contribute to that effort with something that inspires me.</td>
                                 </tr>
                             </tbody>
                         </table>
