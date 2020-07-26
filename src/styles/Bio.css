@@ -164,14 +164,16 @@
         line-height: 30px;
     }
     .tldr-text{
-        top: -20px;
+        top: -10px;
+        padding: 8px 80px;
+        margin-bottom: 40px;
         animation-name: none;
     }
     .bio-body{
         padding: 0px 30px;
     }
     .aBit{
-        top: -100px;
+        top: -138px;
         left: 8px;
     }
 }
