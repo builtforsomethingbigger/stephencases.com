@@ -130,7 +130,7 @@
 .aBit{
     position: relative;
     display: block;
-    top: -130px;
+    top: -135px;
     left: -10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
@@ -157,10 +157,10 @@
 
 @media only screen and (max-width: 724px){
     .bio-intro{
-        font-size: 35px;
+        font-size: 32px;
     }
     .bio-content-skills{
-        font-size: 26px;
+        font-size: 25px;
         line-height: 30px;
     }
     .tldr-text{

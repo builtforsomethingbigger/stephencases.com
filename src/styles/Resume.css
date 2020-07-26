@@ -162,8 +162,9 @@
     }
     .resume-header{
         width: 88%;
+        font-size: 18px;
         text-align: left;
-        left: 25px;
+        left: 0;
     }
     .resume-experience{
         margin-top: 10px;

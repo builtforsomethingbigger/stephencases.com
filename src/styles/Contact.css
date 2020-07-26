@@ -142,10 +142,10 @@ input:hover{
 
 @media only screen and (max-width: 724px){
     .contact-header{
-        font-size: 30px;
+        font-size: 28px;
     }
     .contact-subheader{
-        font-size: 20px;
+        font-size: 16px;
     }
     .conact-form{
         width: 85%;
