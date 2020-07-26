@@ -21,12 +21,14 @@ import '../../styles/Bio.css';
             <div className="bio-body">
                 <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
                 <p className="bio-content-skills">
-                    <b className="text-blue">let</b>&nbsp;<b className="text-green">fullStackDeveloper</b>&nbsp;<b className="text-red">= {`[`}</b>&nbsp;HTML, CSS, JavaScript, ReactJS, Ruby on Rails <b className="text-red">{`]`}</b>
+                    <b className="text-blue">let</b>&nbsp;<b className="text-green">fullStackDeveloper</b>&nbsp;<b className="text-red">= {`[`}</b>&nbsp;<span className="text-white">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-red">{`]`}</b>
                 </p>
-                <div className="bio-content-wrapper" style={{display: bioContent}}>
-                    <div className="tldr" onClick={() => expandCard()}>
+                <div className="tldr-outer" onClick={() => expandCard()}>
+                    <div className="tldr-btn">
                         <p className="tldr-text">TL;DR</p>
                     </div>
+                </div>
+                <div className="bio-content-wrapper" style={{display: bioContent}}>
                     <h1><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content">
@@ -50,7 +52,7 @@ import '../../styles/Bio.css';
                 <div className="status-check">
                     <h1 className="bio-intro">Status Check:</h1>
                     <p className="bio-content pad-T-20">
-                        <b>Employment Status</b>
+                        <b className="text-blue">Employment Status</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -63,7 +65,7 @@ import '../../styles/Bio.css';
                         </table>
                     </div>
                     <p className="bio-content pad-T-20">
-                        <b>What are you currently working on?</b>
+                        <b className="text-blue">What are you currently working on?</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -81,7 +83,7 @@ import '../../styles/Bio.css';
                         </table>
                     </div>
                     <p className="bio-content pad-T-20">
-                        <b>What do I love about Software Engineering?</b>
+                        <b className="text-blue">What do I love about Software Engineering?</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -98,7 +100,7 @@ import '../../styles/Bio.css';
                         </table>
                     </div>                
                     <p className="bio-content pad-T-20">
-                        <b>Other interests include:</b>
+                        <b className="text-blue">Other interests include:</b>
                     </p>
                     <div className="bio-content pad-L-20 pad-B-200">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">

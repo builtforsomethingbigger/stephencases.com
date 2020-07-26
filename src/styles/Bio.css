@@ -36,13 +36,18 @@
   }
 
 .text-blue{
-    color: rgb(48, 77, 134);
+    color: rgb(78, 156, 202);
 }
 .text-green{
-    color: rgb(128, 178, 89);
+    color: rgb(217, 206, 5);
 }
 .text-red{
-    color: rgb(161, 31, 31);
+    font-size: 30px;
+    color: rgb(197, 46, 176);
+}
+.text-white{
+    font-weight: bold;
+    color: rgb(203, 149, 72);
 }
 .bio-intro{
     font-size: 42px;
@@ -51,12 +56,12 @@
     text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
-.tldr{
+/* .tldr{
     position: relative;
     display: inline-block;
     width: 80%;
-    margin-top: -50px;
     font-size: 18px;
+    line-height: 18px;
     font-weight: bold;
     background: linear-gradient(
         to bottom, 
@@ -72,20 +77,71 @@
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
     text-align: center;
     cursor: pointer;
+} */
+.tldr-outer{
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: rgb(180, 180, 180);
+    box-shadow: inset 0px 0px 8px black;
+    border-radius: 50%;
+    top: 185px;
+    left: 380px;
 }
+.tldr-btn{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: inset 0px 0px 15px rgb(78, 2, 2);
+    -webkit-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg); 
+    transform: rotate(-8deg);
+    cursor: pointer;
+    z-index: 20;
+
+    animation-name: tldrBlip;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+  @keyframes tldrBlip {
+    0%  {
+        box-shadow: inset 0px 0px 15px rgb(78, 2, 2);
+    }
+    50%  {
+        background-color: rgb(241, 77, 77);
+        box-shadow: inset 0px 0px 5px rgb(147, 18, 18);
+    }
+  }
+
 .tldr-btn:hover{
-    box-shadow: inset 0px 0px 8px rgba(138, 169, 205, 0.8);
+    animation-name: none;
+    background-color: rgb(210, 61, 61);
+    box-shadow: inset 0px 0px 15px rgb(141, 20, 20);
+}
+.tldr-btn:active{
+    transform: scale(0.9);
 }
 .tldr-text{
     position: relative;
     display: inline-block;
     width: fit-content;
     height: fit-content;
-    padding: 0px 15px;
-    background-color: white;
-    font-size: 25px;
-    color: rgb(118, 135, 149);
-    text-shadow: 0px 1px 3px rgb(69, 69, 69);
+    top: -12px;
+    padding: 3px 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border-radius: 10px;
     text-align: center;
 }
 .bio-body{
@@ -93,15 +149,16 @@
 }
 .bio-content-skills{
     font-size: 26px;
-    line-height: 30px;
+    line-height: 22px;
     top: 0;
-    padding-bottom: 30px;
+    margin-left: -5px;
+    padding: 5px 10px 8px 5px;
     color: rgb(64, 64, 64);
     text-align: left;
-    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+    text-shadow: 0px 1px 2px rgb(0, 0, 0, .5);
 }
 .bio-content-wrapper{
-    margin-top: -10px;
+    margin-top: 40px;
 }
 .bio-content{
     margin-top: -20px;
@@ -129,7 +186,7 @@
 .status-check{
     position: relative;
     display: block;
-    top: -30px;
+    top: 0;
 }
 
 @media only screen and (max-width: 724px){
