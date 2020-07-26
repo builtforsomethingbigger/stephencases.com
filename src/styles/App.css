@@ -146,6 +146,9 @@ a, a:visited{
 }
 
 @media only screen and (max-width: 415px){
+  #root{
+    overflow: hidden;
+  }
   #App{
     width: 100%;
     min-width: 100%;
@@ -154,7 +157,7 @@ a, a:visited{
   #Main{
       width: 100%;
       min-width: 100%;
-      min-height: 69vh;
+      min-height: 80vh;
       top:0;
   }
 }

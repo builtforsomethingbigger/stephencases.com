@@ -137,6 +137,7 @@
 @media only screen and (max-width: 724px){
     .portfolio-card{
         width: 95%;
+        margin-bottom: 50px;
     }
     .project-title{
         font-size: 25px;
