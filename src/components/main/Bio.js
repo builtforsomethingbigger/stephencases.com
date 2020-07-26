@@ -21,7 +21,7 @@ import '../../styles/Bio.css';
             <div className="bio-body">
                 <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
                 <p className="bio-content-skills">
-                    <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b>&nbsp;<b className="text-fushia">= {`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
+                    <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">= {`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
                 </p>
                 <div className="tldr-btn" onClick={() => expandCard()}>
                     <p className="tldr-text">TL;DR</p>
