@@ -92,7 +92,7 @@ import '../../styles/Bio.css';
                                 </tr>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>It’s claiming my stake in the future. Developers are integral in the existence of technologies that advance our society and I feel obliged to contribute to that effort with something that inspires me.</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>It’s staking my claim in the future. Developers are integral in the existence of technologies that advance our society and I feel obliged to contribute to that effort with something that inspires me.</td>
                                 </tr>
                             </tbody>
                         </table>
