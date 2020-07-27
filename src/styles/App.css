@@ -136,7 +136,7 @@ a, a:visited{
 
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (orientation: landscape){
   #App{
     width: 100vw;
     min-width: 100vw;
@@ -152,7 +152,7 @@ a, a:visited{
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape){
+@media only screen and (max-width: 480px){
   #root{
     overflow: hidden;
   }
@@ -160,11 +160,14 @@ a, a:visited{
     width: 100%;
     min-width: 100%;
     min-height: 100%;
+    bottom: 0;
   }
   #Main{
       width: 100%;
       min-width: 100%;
       min-height: 80vh;
       top:0;
-  }
+      bottom: 0;
+
+    }
 }
