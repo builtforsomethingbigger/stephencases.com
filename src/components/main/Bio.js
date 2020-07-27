@@ -63,7 +63,7 @@ import '../../styles/Bio.css';
                         </table>
                     </div>
                     <p className="bio-content pad-T-20">
-                        <b className="text-blue">What are you currently working on?</b>
+                        <b className="text-blue">What am I currently working on?</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
