@@ -158,7 +158,12 @@
 .entry-description-line{
     margin: -10px 0px 25px 15px;
 }
-
+@media only screen and (max-width: 992px){
+    #Resume{
+        height: 85%;
+        bottom: 0;
+    }
+}
 @media only screen and (max-width: 480px){
     .bio-header{
         font-size: 14.5px;

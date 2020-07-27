@@ -140,7 +140,11 @@ input:hover{
 
 
 
-  @media only screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape){
+  @media only screen and (max-width: 480px){
+    #ContactPage{
+        height: 85%;
+        bottom: 0;
+    }
     .contact-header{
         font-size: 28px;
     }
