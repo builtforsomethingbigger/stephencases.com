@@ -149,9 +149,9 @@
 }
 .aBit{
     position: relative;
-    display: block;
-    top: -135px;
-    left: -10px;
+    display: inline-block;
+    top: -80px;
+    left: -4px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -175,7 +175,16 @@
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
 
-@media only screen and (max-width: 724px){
+@media only screen and (max-width: 992px){
+    #Bio{
+        right: 0;
+    }
+    .bio-body{
+        padding: 0px 30px;
+    }
+    .bio-content{
+        font-size: 18px;
+    }
     .bio-intro{
         font-size: 30px;
         padding-bottom: 40px;
@@ -184,6 +193,12 @@
         font-size: 21px;
         line-height: 30px;
         margin-bottom: 40px;
+    }
+    .aBit{
+        position: relative;
+        display: inline-block;
+        top: -70px;
+        left: -4px;
     }
     .tldr-text{
         width: 50%;
@@ -208,16 +223,6 @@
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.486);
         transform: scale(0.9);
     }    
-    .bio-body{
-        padding: 0px 30px;
-    }
-    .bio-content{
-        font-size: 18px;
-    }
-    .aBit{
-        top: -85px;
-        left: -4px;
-    }
     .bio-intro-status{
         font-size: 28px;
     }
