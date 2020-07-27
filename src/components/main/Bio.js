@@ -30,17 +30,17 @@ import '../../styles/Bio.css';
                     <h1 className="bio-intro-status"><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content">
-                        First and foremost, thank you for visiting my site. I appreciate your time and interest.
+                    First and foremost, thank you for visiting my site. I appreciate your time and interest.
                         <br/><br/>
-                        I've always been fascinated with Web Devlopment. Though initially pursuing a career in medicine to please my parents, I knew early on that the internet was the way of the future. Little did I know how much it would inevitably change my life.
+                        I've always been fascinated with Web Development. Though initially pursuing a career in medicine to please my parents, I knew early on that the internet was the way of the future. Little did I know how much it would inevitably change my life.
                         <br/><br/>                    
                         After college, I was working as a Lab Tech in Florida when I decided to take web development seriously. I taught myself the basics through video tutorials and whatever I could find on w3schools. Before I knew it, I was building simple web pages for my friends and a few personal clients.
                         <br/><br/>                    
-                        I eventually decided to take the leap and worked as a Jr. Developer for a digital studio of a well-known ad agency in New York City. I worked on a different project every week, exposing myself to more hands on opportunites with HTML, CSS, and JavaScript. However, as the demand for email development grew, I was quickly appointed as the sole point of contact for all digital marketing campaigns.
+                        I eventually decided to take the leap and worked as a Jr. Developer for a digital studio of a well-known ad agency in New York City. I worked on a different project every week, exposing myself to more hands on opportunities with HTML, CSS, and JavaScript. However, as the demand for email development grew, I was quickly appointed as the sole point of contact for all digital marketing campaigns.
                         <br/><br/>                    
                         I ended up having a fairly successful career in the niche world of digital marketing. I gained a wealth of experience working for some reputable companies (<i>I won't bore you with the name-drops. You can view my resume page to find out more</i>). Unfortunately, I was laid off just around the time the pandemic hit. 
                         <br/><br/>                    
-                        So, what to do? I had several opportunites lined up to continue my career with digital marketing, however, I realized I wasn't truly happy. After weighing my options, I decided to take another leap of faith and enrolled into the Flatiron School's Software Engineering program. For the next hundred-plus days, I was immersed in the world of full-stack development - learning core concepts of object-oriented programming, backend languages and frameworks such as Ruby on Rails, frontend languages and frameworks with JavaScript and ReactJS, as well as RESTful API and more.
+                        So, what to do? I had several opportunities lined up to continue my career with digital marketing, however, I realized I wasn't truly happy. After weighing my options, I decided to take another leap of faith and enrolled into the Flatiron School's Software Engineering program. For the next hundred-plus days, I was immersed in the world of full-stack development - learning core concepts of object-oriented programming, backend languages and frameworks such as Ruby on Rails, frontend languages and frameworks with JavaScript and ReactJS, as well as RESTful API and more.
                         <br/><br/>                    
                         Now, I'm ready and eager to start this new career path. Having over a decade of experience with frontend development, coupled with my new found skills with software engineering, I feel that the sky's the limit!
                         <br/><br/><br/>
