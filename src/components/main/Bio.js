@@ -70,7 +70,7 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8}}>Building out small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
+                                    <td align="left"  style={{lineHeight: 1.8}}>Building small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
                                     <i>I will post them to my portfolio so stay tuned!</i></td>
                                 </tr>
                                 <tr>
