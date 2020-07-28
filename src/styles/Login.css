@@ -3,7 +3,7 @@
     display: block;
     width: 100%;
     max-width: 1500px;
-    height: 100%;
+    height: 100vh;
     top: 0;
     text-align: center;
     overflow: scroll;
@@ -102,4 +102,10 @@
 .go-back-link:active{
     animation-name: none;
     box-shadow: inset 0px 0px 6px rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 992px){
+    #LoginPage{
+        top: 0;
+    }
 }
