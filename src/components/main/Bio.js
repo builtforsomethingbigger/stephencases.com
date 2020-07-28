@@ -112,11 +112,11 @@ import '../../styles/Bio.css';
                                 </tr>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.5}}>-&nbsp;</td>
-                                    <td align="left">Photography and Photo Editing</td>
+                                    <td align="left">Photography &amp; Photo Editing</td>
                                 </tr>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.5}}>-&nbsp;</td>
-                                    <td align="left">Music Production and Song Writing</td>
+                                    <td align="left">Music Production &amp; Song Writing</td>
                                 </tr>
                             </tbody>
                         </table>
