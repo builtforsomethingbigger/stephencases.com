@@ -42,7 +42,7 @@ import '../../styles/Bio.css';
                         <br/><br/>                    
                         So, what to do? I had several opportunities lined up to continue my career with digital marketing, however, I realized I wasn't truly happy. After weighing my options, I decided to take another leap of faith and enrolled into the Flatiron School's Software Engineering program. For the next hundred-plus days, I was immersed in the world of full-stack development, learning core concepts of object-oriented programming, backend languages and frameworks such as Ruby on Rails, frontend languages and frameworks with JavaScript and ReactJS, as well as RESTful API and more.
                         <br/><br/>                    
-                        Now, I'm ready and eager to start this new career path. Having over a decade of experience with frontend development, coupled with my new found skills in software engineering, I feel that the sky's the limit!
+                        Now, I'm ready and eager to start this new career path. With over a decade of frontend development experience, coupled with my new found skills in software engineering, the sky's the limit!
                         <br/><br/><br/>
                     </p>
                     <br/>
