@@ -33,13 +33,19 @@ const PortfolioCard = (props) => {
                 <h1 className="project-title">{props.project_name}</h1>
                 <div className="project-info-section">
                     {props.project_description.split('•').map((line, index) => <p key={index} className="info-description-line">{line}</p>)}
-                    <p className="line-height-25"><b>GITHUB:&nbsp;</b><a href={props.github_url} target="_blank" rel="noopener noreferrer">{props.github_url}</a><br/>
-                        <b>VIDEO DEMO:&nbsp;</b><a href={props.video_url} target="_blank" rel="noopener noreferrer">{props.video_url}</a>
-                    </p>
                 </div>
+                <div className="resource-link-container">
+                    <a className="resource-link" href={props.github_url} target="_blank" rel="noopener noreferrer">GITHUB</a>
+                </div>
+                {props.video_url ?                 
+                    <div className="resource-link-container">
+                        <a className="resource-link" href={props.video_url} target="_blank" rel="noopener noreferrer">VIDEO DEMO</a>
+                    </div>
+                    :
+                    ''
+                }
             </div>
         </div>
-
     )
 }
 export default PortfolioCard

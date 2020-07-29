@@ -112,9 +112,6 @@ li{
 .line-height-25{
   line-height: 25px;
 }
-a, a:visited{
- color:rgb(20, 53, 154);
-}
 
 .App-header {
   background-color: #282c34;
