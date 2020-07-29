@@ -34,7 +34,7 @@ const PortfolioCard = (props) => {
                 <div className="project-info-section">
                     {props.project_description.split('•').map((line, index) => <p key={index} className="info-description-line">{line}</p>)}
                     <p className="line-height-25"><b>GITHUB:&nbsp;</b><a href={props.github_url} target="_blank" rel="noopener noreferrer">{props.github_url}</a><br/>
-                        <b>YOUTUBE:&nbsp;</b><a href={props.video_url} target="_blank" rel="noopener noreferrer">{props.video_url}</a>
+                        <b>VIDEO DEMO:&nbsp;</b><a href={props.video_url} target="_blank" rel="noopener noreferrer">{props.video_url}</a>
                     </p>
                 </div>
             </div>
