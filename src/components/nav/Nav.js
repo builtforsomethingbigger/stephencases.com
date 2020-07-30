@@ -11,7 +11,7 @@ const Nav = (props) => {
     }
 
     return(
-        <div id="Nav">
+        <nav id="Nav">
             <div id="NavMenu">
                 <Link to='/'><span className="navOptions text-grey">BIO</span></Link>
                 <Link to='/portfolio'><span className="navOptions text-grey">PORTFOLIO</span></Link>
@@ -19,7 +19,7 @@ const Nav = (props) => {
                 <Link to='/contact'><span className="navOptions text-grey">CONTACT</span></Link>
                 {displayController()}
             </div>
-        </div> 
+        </nav> 
     )
 }
 export default Nav

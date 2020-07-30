@@ -17,7 +17,7 @@ const ProfileBanner = (props) => {
     }
 
     return(
-        <div id="ProfileBanner">
+        <aside id="ProfileBanner">
             <div className="menuBtn" onClick={props.showMobileNav}>≡</div>
             <div id="ProfilePicture" onDoubleClick={() => LogInSetState()}>
                 <Link to='/login'>
@@ -29,7 +29,7 @@ const ProfileBanner = (props) => {
                 <span className="profile-title">Full-Stack Developer</span>
                 <Nav user={props.user}/>
             </div>
-        </div>
+        </aside>
     )
 }
 export default ProfileBanner

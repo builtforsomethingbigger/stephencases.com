@@ -25,7 +25,7 @@ const PortfolioCard = (props) => {
     }
 
     return(
-        <div className="portfolio-card" onClick={() => {{expandCard(); infoBtnDisplay()}}}>
+        <section className="portfolio-card" onClick={() => {{expandCard(); infoBtnDisplay()}}}>
             <img className="portfolio-preview" src={props.image_url} alt="portfolio-preview" />
             <div className="portfolio-more-info more-info-fx" style={{display: portfolioInfoBtn}}>(click card for more info)</div>
             <div className="bottom-fade"></div>
@@ -45,7 +45,7 @@ const PortfolioCard = (props) => {
                     ''
                 }
             </div>
-        </div>
+        </section>
     )
 }
 export default PortfolioCard

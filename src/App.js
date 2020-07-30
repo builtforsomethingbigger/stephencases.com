@@ -120,7 +120,7 @@ export default class App extends React.Component{
               loggedInStatus={this.state.isLoggedIn} 
             />
             )}/>
-            <div id="Main">
+            <main id="Main">
               <MobileNav mobileNav={this.state.mobileNav} hideMobileNav={this.hideMobileNav}/>
               <Route exact path='/'  render={routerProps => (
                 <Bio  {...routerProps} 
@@ -146,7 +146,7 @@ export default class App extends React.Component{
                 />
               )}/>
               {this.showCMS()}
-            </div>
+            </main>
         </Switch>
       </div>
     )
