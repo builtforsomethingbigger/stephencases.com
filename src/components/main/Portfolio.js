@@ -6,7 +6,7 @@ const Portfolio = (props) => {
 
     const loadData = () => {
         if(!props.portfolio){
-            return <div>LOADING DATA...</div>
+            return <div className="loadingData">LOADING DATA...<br/>Thanks for your patience!</div>
         }else{
             return(props.portfolio.map(portfolio => 
                 <PortfolioCard key={portfolio.id}

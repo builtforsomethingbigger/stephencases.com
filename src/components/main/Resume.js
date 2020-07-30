@@ -7,9 +7,16 @@ import ResumePDF from '../../resume/stephen-cases_resume.pdf'
 
     const loadData = () => {
         if(!props.entries){
-            return <div>LOADING DATA...</div>
+            return <div className="loadingData">LOADING DATA...<br/>Thanks for your patience!</div>
         }else{
-            return <h2 className="resume-experience">RELATED EXPERIENCE</h2>
+            return (
+                <div className="work-experience">
+                    <h2 className="resume-experience">RELATED EXPERIENCE</h2>
+                    <ul>
+                        {props.entries.map(entry => <Entry key={entry.id} {...entry} /> )}
+                    </ul>
+                </div>
+            )
         }
     }
 
@@ -25,13 +32,8 @@ import ResumePDF from '../../resume/stephen-cases_resume.pdf'
                     <b>Email:</b>&nbsp;stephen.cases@gmail.com  |  <b>Location:</b>&nbsp;New York, NY
                 </p> */}
             </div>
-            <div className="work-experience">
-                
                 {loadData()}
-                <ul>
-                    {props.entries.map(entry => <Entry key={entry.id} {...entry} /> )}
-                </ul>
-            </div>
+            
         </article>
     )
 }
