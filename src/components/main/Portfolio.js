@@ -5,7 +5,7 @@ import '../../styles/Portfolio.css';
 const Portfolio = (props) => {
 
     const loadData = () => {
-        if(!props.portfolio){
+        if(props.portfolio){
             return <div className="loadingData">LOADING DATA...<br/>Thanks for your patience!</div>
         }else{
             return(props.portfolio.map(portfolio => 
