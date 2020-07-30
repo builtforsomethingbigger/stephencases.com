@@ -5,9 +5,16 @@ import ResumePDF from '../../resume/stephen-cases_resume.pdf'
 
  const Resume = (props) => {
 
-    if(!props.entries) return ''
+    const loadData = () => {
+        if(!props.entries){
+            return <div>LOADING DATA...</div>
+        }else{
+            return <h2 className="resume-experience">RELATED EXPERIENCE</h2>
+        }
+    }
 
     return(
+        
         <article id="Resume" className="fade-in-fx">
             <div className="dl-resume">
                 <a href={ResumePDF} className="resume-btn" download>Download Resume</a><br/>
@@ -19,7 +26,8 @@ import ResumePDF from '../../resume/stephen-cases_resume.pdf'
                 </p> */}
             </div>
             <div className="work-experience">
-                <h2 className="resume-experience">RELATED EXPERIENCE</h2>
+                
+                {loadData()}
                 <ul>
                     {props.entries.map(entry => <Entry key={entry.id} {...entry} /> )}
                 </ul>
