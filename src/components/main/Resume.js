@@ -6,7 +6,7 @@ import ResumePDF from '../../resume/stephen-cases_resume.pdf'
  const Resume = (props) => {
 
     const loadData = () => {
-        if(!props.entries){
+        if(!props.entries.length){
             return <div className="loadingData">LOADING DATA...<br/>Thanks for your patience!</div>
         }else{
             return (
