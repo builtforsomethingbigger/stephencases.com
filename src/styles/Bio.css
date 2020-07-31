@@ -42,8 +42,7 @@
     width: 96%;
     font-size: 1.5em;
     line-height: 28px;
-    margin-top: -5px;
-    margin-left: -5px;
+    margin: 10px 0px 40px -5px;
     padding: 5px 10px 8px 10px;
     color: rgb(64, 64, 64);
     text-align: left;
@@ -69,6 +68,7 @@
     position: relative;
     display: inline-block;
     width: 100%;
+    margin-bottom: 20px;
     text-align: center;
 }
 .tldr-text{
