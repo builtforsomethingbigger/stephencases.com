@@ -16,12 +16,15 @@ import '../../styles/Bio.css';
     }
 
     return(
-        <div id="Bio" className="fade-in-fx">
+        <article id="Bio" className="fade-in-fx">
             <div className="bio-body">
-                <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
-                <p className="bio-content-skills">
-                    <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">= {`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
-                </p>
+                <section className="bio-sect-one">
+                    <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
+                    <p className="bio-content-skills">
+                        <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">= {`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
+                    </p>
+                </section>
+                <div className="gradient-divider"></div>
                 {/* <Chart /> */}
                 <div className="tldr-btn" onClick={() => expandCard()}>
                     <p className="tldr-text">TL;DR</p>
@@ -100,7 +103,7 @@ import '../../styles/Bio.css';
                     <p className="bio-content pad-T-20">
                         <b className="text-blue">Other interests include:</b>
                     </p>
-                    <div className="bio-content pad-L-20 pad-B-200">
+                    <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
@@ -123,7 +126,8 @@ import '../../styles/Bio.css';
                     </div>
                 </div>
             </div>
-        </div>
+            <div className="slanted-divider"></div>
+        </article>
     )
 }
 export default Bio
