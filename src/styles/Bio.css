@@ -101,10 +101,10 @@
     background-color: rgb(61, 85, 207);
     transform: skewY(4deg)
   } */
-  .slant-up-top{
+.slant-up-top{
     position: absolute;
     width: 99%;
-    height: 500px;
+    height: 850px;
     background-color: #63b6ea;
     box-sizing: border-box;
     left: 0.5%;
@@ -308,5 +308,11 @@
     }    
     .bio-intro-status{
         font-size: 28px;
+    }
+    .status-check{
+        margin: 80px;
+    }
+    .slant-up-top{
+        height: 1000px;
     }
 }
