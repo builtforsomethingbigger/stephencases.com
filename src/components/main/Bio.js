@@ -14,7 +14,27 @@ import '../../styles/Bio.css';
             bioContentDisplay('block')
         }
     }
-
+    // const borderTop = () => {
+    //     if(props.id % 2){
+    //         return <div className="slant-up-top"></div>
+    //     }else{
+    //         return false
+    //     }
+    // }
+    // const borderBottom = () => {
+    //     if(props.id % 2){
+    //         return <div className="slant-up-bottom"></div>
+    //     }else{
+    //         return false
+    //     }
+    // }
+    // const bgColor = () => {
+    //     if(props.id % 2){
+    //         return `#2e9fe6`
+    //     }else{
+    //         return ""
+    //     }
+    // }
     return(
         <article id="Bio" className="fade-in-fx">
             <div className="bio-body">
@@ -50,10 +70,11 @@ import '../../styles/Bio.css';
                     </p>
                     <br/>
                 </div>
+                <div className="slant-up-top"></div>
                 <div className="status-check">
                     <p className="bio-intro-status">Status Check:</p>
                     <p className="bio-content">
-                        <b className="text-blue">Employment Status</b>
+                        <b className="text-white">Employment Status</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -66,7 +87,7 @@ import '../../styles/Bio.css';
                         </table>
                     </div>
                     <p className="bio-content pad-T-20">
-                        <b className="text-blue">What am I currently working on?</b>
+                        <b className="text-white">What am I currently working on?</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -84,7 +105,7 @@ import '../../styles/Bio.css';
                         </table>
                     </div>
                     <p className="bio-content pad-T-20">
-                        <b className="text-blue">What do I love about Software Engineering?</b>
+                        <b className="text-white">What do I love about Software Engineering?</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -101,7 +122,7 @@ import '../../styles/Bio.css';
                         </table>
                     </div>                
                     <p className="bio-content pad-T-20">
-                        <b className="text-blue">Other interests include:</b>
+                        <b className="text-white">Other interests include:</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -126,7 +147,8 @@ import '../../styles/Bio.css';
                     </div>
                 </div>
             </div>
-            <div className="slanted-divider"></div>
+            <div className="slant-up-bottom"></div>
+            {/* <div className="slanted-divider"></div> */}
         </article>
     )
 }

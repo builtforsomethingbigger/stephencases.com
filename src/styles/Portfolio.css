@@ -24,7 +24,7 @@
 .portfolio-card{
     position: relative;
     display: inline-block;
-    width: 80%;
+    width: 95%;
     height: fit-content;
     background: linear-gradient(
         to bottom, 
