@@ -46,8 +46,8 @@ import '../../styles/Bio.css';
                 </section>
                 <div className="slanted-divider"></div>
                 {/* <Chart /> */}
-                <div className="tldr-btn" onClick={() => expandCard()}>
-                    <p className="tldr-text">TL;DR</p>
+                <div className="tldr-btn">
+                    <p className="tldr-text" onClick={() => expandCard()}>TL;DR</p>
                 </div>
                 <section className="bio-content-wrapper" style={{display: bioContent}}>
                     <h1 className="bio-intro-status"><s>A Little</s> About Me...</h1>

@@ -27,20 +27,26 @@
 }
   @keyframes fullStack {
     0%  {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px 0px 8px rgba(138, 169, 205, 0.5);
+        color: rgb(25, 25, 25);
+        /* text-shadow: 0px 0px 12px #4ebbff; */
+        -webkit-text-stroke-width: 0.001em;
+        -webkit-text-stroke-color: #4ebbff;
+        text-shadow: 0px 0px 6px rgb(204, 236, 255);
     }
     40%  {
-        color: rgb(69, 69, 69);
-        text-shadow: 0px 0px 2px rgb(138, 169, 205, 0.5);
+        color: #63b6ea;
+        text-shadow: 0px 0px 1px rgb(0, 0, 0);
     }
     60% {
-        color: rgb(69, 69, 69);
-        text-shadow: 0px 0px 2px rgb(138, 169, 205, 0.5);
+        color: #63b6ea;
+        text-shadow: 0px 0px 1px rgb(0, 0, 0);
     }
     100%  {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px 0px 8px rgb(138, 169, 205, 0.5);
+        color: rgb(25, 25, 25);
+        /* text-shadow: 0px 0px 12px #4ebbff; */
+        -webkit-text-stroke-width: 0.001em;
+        -webkit-text-stroke-color: #4ebbff;
+        text-shadow: 0px 0px 6px rgb(204, 236, 255);
     }
 }
 .bio-content-skills{
@@ -88,8 +94,8 @@
     content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: -80px;
+    height: 400px;
+    top: -130px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -128,10 +134,10 @@
 .slant-up-bottom{
     position: absolute;
     width: 99%;
-    height: 600px;
+    height: 900px;
     box-sizing: border-box;
     background-color: #63b6ea;
-    margin-top: -700px;
+    margin-top: -920px;
     left: 0.5%;
     overflow-x: hidden;
     z-index: -1;
@@ -272,7 +278,7 @@
         font-size: 18px;
     }
     .bio-intro{
-        font-size: 28px;
+        font-size: 26px;
         padding-bottom: 40px;
     }
     .bio-content-skills{
@@ -298,17 +304,28 @@
         /* margin-bottom: 60px; */
         animation-name: none;
     }
-    .tldr-text:hover{
-        text-shadow: 0px 0px 1px rgb(21, 62, 93);
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.486);
-            background: linear-gradient(
-            to bottom,
-            rgb(209, 220, 226) 2%,
-            rgb(175, 181, 188) 33%,
-            rgba(175, 181, 188) 66%,
-            rgba(209, 220, 226) 100%
-        );
-        }
+    .tldr-text:active{
+        animation-name: tldrMobile;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+      @keyframes tldrMobile {
+        40%  {
+            color: black;
+            background-color: white;
+            border: 3px solid black;
+            text-shadow: 0px 0px 1px rgb(0, 0, 0);
+            box-shadow: 0px 0px 12px rgba(255, 255, 255);
+                }
+        60% {
+            color: black;
+            background-color: white;
+            border: 3px solid black;
+            text-shadow: 0px 0px 1px rgb(0, 0, 0);
+            box-shadow: 0px 0px 12px rgba(255, 255, 255);
+                }
+    }    
     .bio-intro-status{
         font-size: 28px;
     }
