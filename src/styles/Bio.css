@@ -6,6 +6,9 @@
     text-align: left;
     overflow-x: hidden;
 }
+.bio-body{
+    padding: 0px 80px;
+}
 .bio-intro{
     position: relative;
     display: inline-block;
@@ -28,7 +31,6 @@
   @keyframes fullStack {
     0%  {
         color: rgb(25, 25, 25);
-        /* text-shadow: 0px 0px 12px #4ebbff; */
         -webkit-text-stroke-width: 0.001em;
         -webkit-text-stroke-color: #4ebbff;
         text-shadow: 0px 0px 6px rgb(204, 236, 255);
@@ -43,7 +45,6 @@
     }
     100%  {
         color: rgb(25, 25, 25);
-        /* text-shadow: 0px 0px 12px #4ebbff; */
         -webkit-text-stroke-width: 0.001em;
         -webkit-text-stroke-color: #4ebbff;
         text-shadow: 0px 0px 6px rgb(204, 236, 255);
@@ -51,34 +52,27 @@
 }
 .bio-content-skills{
     width: fit-content;
+    padding: 10px 0px;
+    text-align: left;
     font-family: monospace;
     font-size: 20px;
-    font-stretch: narrower;
     line-height: 28px;
-    /* margin: 10px 0px 40px -5px; */
     margin-top: -10px;
-    padding: 5px 10px;
-    color: rgb(64, 64, 64);
-    text-align: left;
-    -webkit-text-stroke-width: 0.001em;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
-    /* text-shadow: 0px 0px 4px rgb(255, 255, 255); */
-    background-color: black;
     z-index: 1;
 }
-.gradient-divider{
-    position: absolute;
-    display: inline-block;
-    width: 99%;
-    height: 350px;
-    top: 0.5%;
-    left: 0.5%;
-    background: linear-gradient(
-        to bottom,
-        rgba(41, 66, 93, 0.5) 0%,
-        rgb(255, 255, 255) 100%
-    );    
-    z-index: -2;
+.text-blue{
+    color: rgb(78, 156, 202);
+}
+.text-yellow{
+    color: rgb(217, 206, 5);
+}
+.text-fushia{
+    font-size: 26px;
+    color: rgb(197, 46, 176);
+}
+.text-orange{
+    font-weight: bold;
+    color: rgb(203, 149, 72);
 }
 .slanted-divider{
     position: absolute;
@@ -102,94 +96,6 @@
     transform-origin: top left;
     background-color: rgb(0, 0, 0);
     transform: skewY(3deg)
-  }
-.slant-up-top{
-    position: absolute;
-    width: 99%;
-    height: 850px;
-    background-color: rgb(196, 211, 236);
-    /* background: linear-gradient(
-        to bottom,
-        rgb(196, 211, 236) 75%,
-        #ffffff 100%
-    ); */
-    box-sizing: border-box;
-    left: 0.5%;
-    margin-top: -40px;
-}
-.slant-up-top:before{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-color: rgb(196, 211, 236);
-    border-top: 12px solid black;
-    z-index: -1;
-    top: -12px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: top right;
-    transform: skewY(3deg);
-}
-.slant-up-bottom{
-    position: absolute;
-    width: 99%;
-    height: 900px;
-    box-sizing: border-box;
-    background-color: rgb(196, 211, 236);
-    margin-top: -920px;
-    left: 0.5%;
-    overflow-x: hidden;
-    z-index: -1;
-}
-/* .slant-up-bottom:after{
-    position: absolute;
-    width: 101%;
-    height: 100%;
-    content: '';
-    background: linear-gradient(
-        to bottom,
-        #63b6ea 95%,
-        #83c0e5 100%
-    );
-    margin-top: -75px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: top left;
-    transform: skewY(3deg);
-} */
-.bg-blue{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 300px;
-    margin-top: -10px;
-    background-color: #2e9fe6;
-    z-index: 1;
-}
-.text-white{
-    color: white;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
-}
-.neg-pad-20{
-    margin-bottom: 5px;
-}
-.text-blue{
-    color: rgb(78, 156, 202);
-}
-.text-yellow{
-    color: rgb(217, 206, 5);
-}
-.text-fushia{
-    font-size: 30px;
-    color: rgb(197, 46, 176);
-}
-.text-orange{
-    font-weight: bold;
-    color: rgb(203, 149, 72);
 }
 .tldr-btn{
     position: relative;
@@ -220,26 +126,22 @@
 }
 .tldr-text:hover{
     color: black;
-    background-color: white;
+    background-color: rgb(196, 211, 236);
     border: 3px solid black;
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
     box-shadow: 0px 0px 12px rgba(255, 255, 255);
-}
-
-.bio-body{
-    padding: 0px 80px;
 }
 .bio-content-wrapper{
     margin-top: -80px;
     padding-bottom: 30px;
 }
-.bio-content{
-    /* margin-top: -20px; */
-    font-size: 24px;
-    line-height: 37px;
-    color: rgb(64, 64, 64);
+.bio-intro-about{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
     text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+    margin-bottom: -20px;
 }
 .aBit{
     position: relative;
@@ -256,13 +158,37 @@
     -ms-transform: rotate(-8deg); 
     transform: rotate(-8deg);
 }
-.bio-intro-about{
-    font-size: 35px;
-    font-weight: bold;
-    color: rgb(56, 56, 56);
+.bio-content{
+    /* margin-top: -20px; */
+    font-size: 24px;
+    line-height: 37px;
+    color: rgb(64, 64, 64);
     text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
-    margin-bottom: -20px;
+}
+.slant-up-top{
+    position: absolute;
+    width: 99%;
+    height: 850px;
+    background-color: rgb(196, 211, 236);
+    box-sizing: border-box;
+    left: 0.5%;
+    margin-top: -40px;
+}
+.slant-up-top:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgb(196, 211, 236);
+    border-top: 12px solid black;
+    z-index: -1;
+    top: -12px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(3deg);
 }
 .status-check{
     position: relative;
@@ -279,6 +205,33 @@
     text-align: left;
     text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
+.neg-pad-20{
+    margin-bottom: 5px;
+}
+.text-white{
+    color: white;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.blue-bottom{
+    position: absolute;
+    display: block;
+    width: 99%;
+    height: 820px;
+    box-sizing: border-box;
+    background-color: rgb(196, 211, 236);
+    margin-top: -945px;
+    border-bottom: 15px solid black;
+    left: 0.5%;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+
+
+
+
+
+/* ----- MOBILE STYLES ----- */
 
 @media only screen and (max-width: 992px){
     #Bio{
@@ -286,13 +239,6 @@
     }
     .bio-body{
         padding: 0px 30px;
-    }
-    .bio-content{
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .pad-B-50{
-        padding-bottom: 50px;
     }
     .bio-intro{
         font-size: 24px;
@@ -305,21 +251,10 @@
         margin-bottom: 40px;
         background-color: rgba(0, 0, 0, 0.8);
     }
-    .bio-content-wrapper{
-        margin-top: -40px;
-    }
-    .aBit{
-        position: relative;
-        display: inline-block;
-        top: -30px;
-        left: -4px;
-    }
     .tldr-text{
-        /* width: 75%; */
         top: -22px;
         left: 3px;
         right: 3px;
-        /* margin-bottom: 60px; */
         animation-name: none;
     }
     .tldr-text:hover{
@@ -336,36 +271,47 @@
       @keyframes tldrMobile {
         40%  {
             color: black;
-            background-color: white;
+            background-color: rgb(196, 211, 236);
             border: 3px solid black;
             text-shadow: 0px 0px 1px rgb(0, 0, 0);
             box-shadow: 0px 0px 12px rgba(255, 255, 255);
                 }
         60% {
             color: black;
-            background-color: white;
+            background-color: rgb(196, 211, 236);
             border: 3px solid black;
             text-shadow: 0px 0px 1px rgb(0, 0, 0);
             box-shadow: 0px 0px 12px rgba(255, 255, 255);
                 }
     }    
+    .bio-content-wrapper{
+        margin-top: -40px;
+    }
     .bio-intro-about{
         font-size: 28px;
         margin-bottom: -20px;
     }
-    .bio-intro-status{
-        font-size: 28px;
+    .aBit{
+        position: relative;
+        display: inline-block;
+        top: -30px;
+        left: -4px;
     }
-   .status-check{
-        margin: 120px 75px;
+    .bio-content{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .pad-B-50{
+        padding-bottom: 50px;
     }
     .slant-up-top{
         margin-top: -83px;
         height: 1100px;
-        /* background: linear-gradient(
-            to bottom,
-            #63b6ea 90%,
-            #ffffff 100%
-        ); */
+    }
+    .status-check{
+         margin: 120px 75px;
      }
+    .bio-intro-status{
+        font-size: 28px;
+    }
 }

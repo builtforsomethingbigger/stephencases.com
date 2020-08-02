@@ -6,7 +6,11 @@ const Nav = (props) => {
 
     const displayController = () => {
         if(props.user.username === 'scases82'){
-            return <Link to='/cms'><span className="controller">CMS CONTROLLER</span></Link>
+            return (
+                <div>
+                    <Link to='/cms'><span className="controller">CMS CONTROLLER</span></Link>
+                </div>
+            )
         }
     }
 
@@ -17,8 +21,23 @@ const Nav = (props) => {
                 <Link to='/portfolio'><span className="navOptions text-grey">PORTFOLIO</span></Link>
                 <Link to='/resume'><span className="navOptions text-grey">RESUME</span></Link>
                 <Link to='/contact'><span className="navOptions text-grey">CONTACT</span></Link>
-                {displayController()}
             </div>
+            <section id="SocialMediaSection">
+                <a href="https://www.linkedin.com/in/stephen-cases/" target="_blank" rel="noopener noreferrer">
+                    <i className="linkedin icon"/>
+                </a>
+                <a href="https://github.com/builtforsomethingbigger" target="_blank" rel="noopener noreferrer">
+                    <i className="github icon"/>
+                </a>
+                <a href="https://twitter.com/B4S_Bigger" target="_blank" rel="noopener noreferrer">
+                    <i className="twitter icon"/>
+                </a>
+                <a href="https://medium.com/@builtforsomethingbigger" target="_blank" rel="noopener noreferrer">
+                    <i className="medium icon"/>
+                </a>
+            </section>
+                {displayController()}
+
         </nav> 
     )
 }

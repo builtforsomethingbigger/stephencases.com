@@ -17,10 +17,10 @@ import '../../styles/Bio.css';
     return(
         <article id="Bio" className="fade-in-fx">
             <div className="bio-body">
-                <section className="bio-sect-one">
+                <section>
                     <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
                     <p className="bio-content-skills">
-                        <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">={`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
+                        <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">={`[`}</b><span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
                     </p>
                 </section>
                 <div className="slanted-divider"></div>
@@ -72,7 +72,7 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8}}>Building small apps that showcase my experience with React 16 Hooks and Redux.<br/>
+                                    <td align="left"  style={{lineHeight: 1.8}}>Building small apps that showcase my experience with React Hooks and Redux.<br/>
                                     <i>I will post them to my portfolio so stay tuned!</i></td>
                                 </tr>
                                 <tr>
@@ -126,8 +126,7 @@ import '../../styles/Bio.css';
                     </div>
                 </section>
             </div>
-            <div className="slant-up-bottom"></div>
-            {/* <div className="slanted-divider"></div> */}
+            <div className="blue-bottom"></div>
         </article>
     )
 }

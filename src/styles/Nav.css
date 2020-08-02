@@ -40,7 +40,8 @@
     color: rgb(79, 79, 79);
 }
 .text-grey:hover{
-    color: rgb(75, 141, 217);
+    color: rgb(107, 156, 212);
+    /* text-shadow: 0px 0px 1px black; */
 }
 .controller{
     position: relative;
@@ -60,8 +61,67 @@
     text-shadow: none;
     box-shadow: inset 0px 0px 10px rgba(138, 169, 205, 0.2);
 }
-
-
+#SocialMediaSection{
+    position: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.linkedin{
+    position: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    background: url('../images/linkedin-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.github{
+    position: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    background: url('../images/github-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.twitter{
+    position: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    background: url('../images/twitter-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.medium{
+    position: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    background: url('../images/medium-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.02);
+    opacity: .85;
+}
+.icon:active{
+    transform: scale(1);
+    opacity: 1;
+}
 
 
 
