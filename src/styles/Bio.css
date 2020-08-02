@@ -128,14 +128,23 @@
     color: black;
     border: 3px solid black;
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
-    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    /* box-shadow: 0px 0px 12px rgba(255, 255, 255); */
     animation-name: tldrHover;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
   @keyframes tldrHover {
-    0%  {
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    100%{
+        background-color: white;
+    }
+    /* 0%  {
         background: linear-gradient(
             to bottom left, 
             rgb(189, 191, 200, 0.5) 0%,
@@ -206,7 +215,7 @@
             rgb(255, 255, 255, 0.8) 60%,
             rgb(189, 191, 200, 0.6) 100%
         ); 
-    }
+    } */
 }    
 
 .tldr-text:active{
