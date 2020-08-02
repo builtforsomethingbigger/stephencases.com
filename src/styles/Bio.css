@@ -173,6 +173,9 @@
 .text-white{
     color: white;
 }
+.neg-pad-20{
+    margin-bottom: 5px;
+}
 .text-blue{
     color: rgb(78, 156, 202);
 }
@@ -240,7 +243,7 @@
 .aBit{
     position: relative;
     display: inline-block;
-    top: -80px;
+    top: -35px;
     left: -4px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
@@ -251,6 +254,14 @@
     -webkit-transform: rotate(-8deg);
     -ms-transform: rotate(-8deg); 
     transform: rotate(-8deg);
+}
+.bio-intro-about{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    text-align: left;
+    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+    margin-bottom: -20px;
 }
 .status-check{
     position: relative;
@@ -337,7 +348,7 @@
             box-shadow: 0px 0px 12px rgba(255, 255, 255);
                 }
     }    
-    .bio-intro-status{
+    .bio-intro-about{
         font-size: 28px;
         margin-bottom: -20px;
     }

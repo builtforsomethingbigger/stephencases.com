@@ -50,7 +50,7 @@ import '../../styles/Bio.css';
                     <p className="tldr-text" onClick={() => expandCard()}>TL;DR</p>
                 </div>
                 <section className="bio-content-wrapper" style={{display: bioContent}}>
-                    <h1 className="bio-intro-status"><s>A Little</s> About Me...</h1>
+                    <h1 className="bio-intro-about"><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content pad-B-50">
                     First and foremost, thank you for visiting my site. I appreciate your time and interest.
@@ -72,8 +72,8 @@ import '../../styles/Bio.css';
                 </section>
                 <div className="slant-up-top"></div>
                 <section className="status-check">
-                    <p className="bio-intro-status">Status Check:</p>
-                    <p className="bio-content pad-T-20">
+                    <p className="bio-intro-status">STATUS CHECK:</p>
+                    <p className="bio-content neg-pad-20">
                         <b className="text-white">Employment Status</b>
                     </p>
                     <div className="bio-content pad-L-20">
@@ -86,8 +86,8 @@ import '../../styles/Bio.css';
                             </tbody>
                         </table>
                     </div>
-                    <p className="bio-content pad-T-20">
-                        <b className="text-white">What am I currently working on?</b>
+                    <p className="bio-content neg-pad-20">
+                        <b className="text-white">CURRENTLY WORKING ON:</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -104,8 +104,8 @@ import '../../styles/Bio.css';
                             </tbody>
                         </table>
                     </div>
-                    <p className="bio-content pad-T-20">
-                        <b className="text-white">What do I love about Software Engineering?</b>
+                    <p className="bio-content neg-pad-20">
+                        <b className="text-white">WHAT SWE MEANS TO ME:</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
@@ -121,8 +121,8 @@ import '../../styles/Bio.css';
                             </tbody>
                         </table>
                     </div>                
-                    <p className="bio-content pad-T-20">
-                        <b className="text-white">Other interests include:</b>
+                    <p className="bio-content neg-pad-20">
+                        <b className="text-white">OTHER INTERESTS:</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
