@@ -114,9 +114,12 @@
     background-repeat: no-repeat;
     cursor: pointer;
 }
+.icon{
+    opacity: .9;
+}
 .icon:hover{
     transform: scale(1.02);
-    opacity: .85;
+    opacity: .75;
 }
 .icon:active{
     transform: scale(1);
