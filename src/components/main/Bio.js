@@ -1,5 +1,4 @@
 import React from 'react'
-import Chart from './Chart'
 import {useState} from 'react'
 import '../../styles/Bio.css';
 
@@ -14,27 +13,7 @@ import '../../styles/Bio.css';
             bioContentDisplay('block')
         }
     }
-    // const borderTop = () => {
-    //     if(props.id % 2){
-    //         return <div className="slant-up-top"></div>
-    //     }else{
-    //         return false
-    //     }
-    // }
-    // const borderBottom = () => {
-    //     if(props.id % 2){
-    //         return <div className="slant-up-bottom"></div>
-    //     }else{
-    //         return false
-    //     }
-    // }
-    // const bgColor = () => {
-    //     if(props.id % 2){
-    //         return `#2e9fe6`
-    //     }else{
-    //         return ""
-    //     }
-    // }
+
     return(
         <article id="Bio" className="fade-in-fx">
             <div className="bio-body">
@@ -45,7 +24,6 @@ import '../../styles/Bio.css';
                     </p>
                 </section>
                 <div className="slanted-divider"></div>
-                {/* <Chart /> */}
                 <div className="tldr-btn">
                     <p className="tldr-text" onClick={() => expandCard()}>TL;DR</p>
                 </div>
@@ -74,14 +52,14 @@ import '../../styles/Bio.css';
                 <section className="status-check">
                     <p className="bio-intro-status">STATUS CHECK:</p>
                     <p className="bio-content neg-pad-20">
-                        <b className="text-white">Employment Status</b>
+                        <b className="text-white">CURRENT AVAILABILITIY:</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Currently entertaining new opportunities to grow as a Software Engineer.</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Entertaining new opportunities to strengthen my skills as a developer.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -93,13 +71,13 @@ import '../../styles/Bio.css';
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8}}>Building small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
+                                    <td align="left"  style={{lineHeight: 1.8}}>Building small apps that showcase my experience with React 16 Hooks and Redux.<br/>
                                     <i>I will post them to my portfolio so stay tuned!</i></td>
                                 </tr>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Learning more about the JestJS Testing Framework</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Becoming more experienced with the Jest testing framework</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -111,11 +89,11 @@ import '../../styles/Bio.css';
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
                                     <td align="left"  style={{lineHeight: 1.8}}>It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
                                 </tr>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
                                     <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>It’s staking my claim in the future. Developers are integral in the existence of technologies that advance our society and I feel obliged to contribute to that effort with something that inspires me.</td>
                                 </tr>
                             </tbody>
@@ -131,16 +109,17 @@ import '../../styles/Bio.css';
                                     <td colSpan="2"></td>
                                 </tr>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.5}}>-&nbsp;</td>
-                                    <td align="left">Blockchain &amp; Distributed Ledger Technology</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
+                                    <td align="left" style={{lineHeight: 1.8}}>Emerging technologies like Blockchain/DLT and Headless CMS</td>
                                 </tr>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.5}}>-&nbsp;</td>
-                                    <td align="left">Photography &amp; Photo Editing</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
+                                    <td align="left" style={{lineHeight: 1.8}}>Photography &amp; Photo editing (<i>purely as a hobby</i>)</td>
                                 </tr>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.5}}>-&nbsp;</td>
-                                    <td align="left">Music Production &amp; Piano Playing</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
+                                    <td align="left" style={{lineHeight: 1.8}}>Playing the same 10 songs on the piano that I committed to memory from watching YouTube tutorials.
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

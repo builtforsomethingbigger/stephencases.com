@@ -33,15 +33,15 @@
         rgb(255, 255, 255) 60%,
         rgb(209, 214, 224) 100%
     ); 
-    box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
-    border: 2px solid rgba(143, 166, 205, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
     margin: 2%;
     overflow: hidden;
     cursor: pointer;
 }
 .portfolio-card:hover{
-    box-shadow: 0px 0px 5px rgba(138, 169, 205, 0.3);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 .portfolio-preview{
     width: 100%;
@@ -95,7 +95,7 @@
     width: 100%;
     height: fit-content;
     text-align: left;
-    background-color: rgb(231, 238, 249);
+    background-color: rgb(196, 211, 236);
     cursor: default;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -139,13 +139,13 @@
     width: 100%;
     height: fit-content;
     padding: 10px 10px;
-    background-color: rgb(196, 211, 236);
+    background-color: rgb(0, 0, 0);
     box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.5);
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
     font-size: 20px;
 }
 .resource-link-container:hover{
-    background-color: rgb(182, 203, 236);
+    background-color: rgba(0, 0, 0, 0.7);
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 .resource-link{

@@ -76,17 +76,4 @@
     #Nav{
         display: none;
     }
-    
-    /* #Nav{
-        position: absolute;
-        width: 100%;
-        height: fit-content;
-        top: 200px;
-        left: 0;
-        z-index: 15;
-    }
-    .navOptions{
-        font-size: 20px;
-        padding: 12px 0px 12px 0px;    
-    } */
 }
