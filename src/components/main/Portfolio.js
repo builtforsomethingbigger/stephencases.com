@@ -19,6 +19,7 @@ const Portfolio = (props) => {
         <div id="Portfolio" className="fade-in-fx">
             <h1 className="portfolio-header">MY PORTFOLIO</h1>
             {loadData()}
+            <div className="pad-B-100"></div>
         </div>
     )
 }

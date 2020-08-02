@@ -140,6 +140,9 @@ li{
 .pad-sides-2pct{
   padding: 0px 2%;
 }
+.pad-B-100{
+  padding-bottom: 100px;
+}
 .pad-B-200{
   padding-bottom: 200px;
 }
