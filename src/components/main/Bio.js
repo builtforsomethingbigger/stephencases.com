@@ -73,14 +73,14 @@ import '../../styles/Bio.css';
                 <div className="slant-up-top"></div>
                 <section className="status-check">
                     <p className="bio-intro-status">Status Check:</p>
-                    <p className="bio-content">
+                    <p className="bio-content pad-T-20">
                         <b className="text-white">Employment Status</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
                                     <td align="left"  style={{lineHeight: 1.5, paddingBottom: 20}}>Currently entertaining new opportunities to grow as a Software Engineer.</td>
                                 </tr>
                             </tbody>
@@ -93,12 +93,12 @@ import '../../styles/Bio.css';
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8}}>Building small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                                    <td align="left">Building small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
                                     <i>I will post them to my portfolio so stay tuned!</i></td>
                                 </tr>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
                                     <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Learning more about the JestJS Testing Framework</td>
                                 </tr>
                             </tbody>
@@ -111,11 +111,11 @@ import '../../styles/Bio.css';
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8}}>It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
+                                    <td align="left">It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
                                 </tr>
                                 <tr>
-                                    <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.3}}>-&nbsp;</td>
+                                    <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
                                     <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>It’s staking my claim in the future. Developers are integral in the existence of technologies that advance our society and I feel obliged to contribute to that effort with something that inspires me.</td>
                                 </tr>
                             </tbody>
