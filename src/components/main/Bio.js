@@ -81,7 +81,7 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.5, paddingBottom: 20}}>Currently entertaining new opportunities to grow as a Software Engineer.</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Currently entertaining new opportunities to grow as a Software Engineer.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -94,7 +94,7 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
-                                    <td align="left">Building small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
+                                    <td align="left"  style={{lineHeight: 1.8}}>Building small apps that showcase my understanding of React 16 Hooks and Redux.<br/>
                                     <i>I will post them to my portfolio so stay tuned!</i></td>
                                 </tr>
                                 <tr>
@@ -112,7 +112,7 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
-                                    <td align="left">It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
+                                    <td align="left"  style={{lineHeight: 1.8}}>It's pure creation. From absolutely nothing, I can produce something that could potentially benefit millions (<i>if not billions</i>)!</td>
                                 </tr>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28}}>-&nbsp;</td>
