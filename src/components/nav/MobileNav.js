@@ -11,6 +11,21 @@ const MobileNav = (props) => {
                 <Link to='/resume' onClick={props.hideMobileNav}><span className="mobileNavOptions text-grey">RESUME</span></Link>
                 <Link to='/contact' onClick={props.hideMobileNav}><span className="mobileNavOptions text-grey">CONTACT</span></Link>
             </div>
+            <section id="SocialMediaSection">
+                <a href="https://www.linkedin.com/in/stephen-cases/" target="_blank" rel="noopener noreferrer">
+                    <i className="linkedin icon"/>
+                </a>
+                <a href="https://github.com/builtforsomethingbigger" target="_blank" rel="noopener noreferrer">
+                    <i className="github icon"/>
+                </a>
+                <a href="https://twitter.com/B4S_Bigger" target="_blank" rel="noopener noreferrer">
+                    <i className="twitter icon"/>
+                </a>
+                <a href="https://medium.com/@builtforsomethingbigger" target="_blank" rel="noopener noreferrer">
+                    <i className="medium icon"/>
+                </a>
+            </section>
+
         </nav> 
     )
 }
