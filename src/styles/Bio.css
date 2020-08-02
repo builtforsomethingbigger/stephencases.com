@@ -276,10 +276,14 @@
         padding: 0px 30px;
     }
     .bio-content{
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .pad-B-50{
+        padding-bottom: 50px;
     }
     .bio-intro{
-        font-size: 26px;
+        font-size: 25px;
         padding-bottom: 40px;
     }
     .bio-content-skills{
@@ -294,7 +298,7 @@
     .aBit{
         position: relative;
         display: inline-block;
-        top: -70px;
+        top: -30px;
         left: -4px;
     }
     .tldr-text{
@@ -334,9 +338,10 @@
     }    
     .bio-intro-status{
         font-size: 28px;
+        margin-bottom: -20px;
     }
     .status-check{
-        margin: 120px 80px;
+        margin: 120px 75px;
     }
     .slant-up-top{
         margin-top: -83px;

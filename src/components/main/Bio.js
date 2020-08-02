@@ -52,7 +52,7 @@ import '../../styles/Bio.css';
                 <section className="bio-content-wrapper" style={{display: bioContent}}>
                     <h1 className="bio-intro-status"><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
-                    <p className="bio-content">
+                    <p className="bio-content pad-B-50">
                     First and foremost, thank you for visiting my site. I appreciate your time and interest.
                         <br/><br/>
                         I've always been fascinated with Web Development. Though initially pursuing a career in medicine to please my parents, I knew early on that the internet was the way of the future. Little did I know how much it would inevitably change my life.
