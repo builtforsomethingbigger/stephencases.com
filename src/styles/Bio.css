@@ -277,13 +277,14 @@
     }
     .bio-content{
         font-size: 20px;
-        line-height: 28px;
+        line-height: 30px;
     }
     .pad-B-50{
         padding-bottom: 50px;
     }
     .bio-intro{
         font-size: 24px;
+        padding-left: 12px;
         padding-bottom: 40px;
     }
     .bio-content-skills{
