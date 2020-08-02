@@ -41,15 +41,15 @@ import '../../styles/Bio.css';
                 <section className="bio-sect-one">
                     <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
                     <p className="bio-content-skills">
-                        <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">= {`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
+                        <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">={`[`}</b>&nbsp;<span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
                     </p>
                 </section>
-                <div className="gradient-divider"></div>
+                <div className="slanted-divider"></div>
                 {/* <Chart /> */}
                 <div className="tldr-btn" onClick={() => expandCard()}>
                     <p className="tldr-text">TL;DR</p>
                 </div>
-                <div className="bio-content-wrapper" style={{display: bioContent}}>
+                <section className="bio-content-wrapper" style={{display: bioContent}}>
                     <h1 className="bio-intro-status"><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content">
@@ -69,9 +69,9 @@ import '../../styles/Bio.css';
                         <br/><br/><br/>
                     </p>
                     <br/>
-                </div>
+                </section>
                 <div className="slant-up-top"></div>
-                <div className="status-check">
+                <section className="status-check">
                     <p className="bio-intro-status">Status Check:</p>
                     <p className="bio-content">
                         <b className="text-white">Employment Status</b>
@@ -145,7 +145,7 @@ import '../../styles/Bio.css';
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </section>
             </div>
             <div className="slant-up-bottom"></div>
             {/* <div className="slanted-divider"></div> */}
