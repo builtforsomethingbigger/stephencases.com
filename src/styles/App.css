@@ -200,9 +200,9 @@ li{
       right: 0;
       bottom: 0;
       top:1%;
-
-    }
-    .loadingData{
-      top: 50px;
-    }
+    box-shadow: inset 0px 2px 12px rgba(38, 38, 44, 0.299);
+  }
+  .loadingData{
+    top: 50px;
+  }
 }
