@@ -52,14 +52,14 @@ import '../../styles/Bio.css';
                 <section className="status-check">
                     <p className="bio-intro-status">STATUS CHECK:</p>
                     <p className="bio-content neg-pad-20">
-                        <b className="text-white">CURRENT AVAILABILITIY:</b>
+                        <b className="text-white">OBJECTIVE:</b>
                     </p>
                     <div className="bio-content pad-L-20">
                         <table width="100%" cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Entertaining new opportunities to strengthen my skills as a developer.</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Welcoming new opportunities to strengthen my skills as a developer.</td>
                                 </tr>
                             </tbody>
                         </table>
