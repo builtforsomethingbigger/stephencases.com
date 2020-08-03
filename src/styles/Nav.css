@@ -64,7 +64,7 @@
 #SocialMediaSection{
     position: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top:50px;
 }
 .linkedin{
     position: flex;
@@ -138,5 +138,8 @@
     }
     #Nav{
         display: none;
+    }
+    #SocialMediaSection{
+        margin-top:10px;
     }
 }
