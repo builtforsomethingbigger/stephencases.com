@@ -31,9 +31,9 @@
   @keyframes fullStack {
     0%  {
         color: rgb(25, 25, 25);
-        -webkit-text-stroke-width: 0.001em;
+        -webkit-text-stroke-width: 0.03em;
         -webkit-text-stroke-color: #4ebbff;
-        text-shadow: 0px 0px 6px rgb(204, 236, 255);
+        text-shadow: 0px 0px 15px #4ebbff;
     }
     40%  {
         color: #63b6ea;
@@ -45,9 +45,9 @@
     }
     100%  {
         color: rgb(25, 25, 25);
-        -webkit-text-stroke-width: 0.001em;
+        -webkit-text-stroke-width: 0.03em;
         -webkit-text-stroke-color: #4ebbff;
-        text-shadow: 0px 0px 6px rgb(204, 236, 255);
+        text-shadow: 0px 0px 15px #4ebbff;
     }
 }
 .bio-content-skills{
