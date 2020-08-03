@@ -94,7 +94,7 @@
     bottom: 0;
     left: 0;
     transform-origin: top left;
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: rgba(25, 25, 25);
     transform: skewY(3deg)
 }
 .tldr-btn{
@@ -271,7 +271,7 @@
     height: 100%;
     content: '';
     background-color: rgb(196, 211, 236);
-    border-top: 12px solid rgba(30, 30, 30, 0.9);
+    border-top: 12px solid rgba(25, 25, 25);
     z-index: -1;
     top: -12px;
     right: 0;
