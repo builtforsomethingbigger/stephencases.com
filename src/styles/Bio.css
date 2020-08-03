@@ -32,22 +32,22 @@
     0%  {
         color: rgb(25, 25, 25);
         -webkit-text-stroke-width: 0.03em;
-        -webkit-text-stroke-color: #4ebbff;
-        text-shadow: 0px 0px 15px #4ebbff;
+        -webkit-text-stroke-color: rgb(170, 195, 243);
+        text-shadow: 0px 0px 15px rgba(170, 195, 243);
     }
     40%  {
-        color: #63b6ea;
+        color: rgba(170, 195, 243);
         text-shadow: 0px 0px 1px rgb(0, 0, 0);
     }
     60% {
-        color: #63b6ea;
+        color: rgba(170, 195, 243);
         text-shadow: 0px 0px 1px rgb(0, 0, 0);
     }
     100%  {
         color: rgb(25, 25, 25);
         -webkit-text-stroke-width: 0.03em;
-        -webkit-text-stroke-color: #4ebbff;
-        text-shadow: 0px 0px 15px #4ebbff;
+        -webkit-text-stroke-color: rgba(170, 195, 243);
+        text-shadow: 0px 0px 15px rgba(170, 195, 243);
     }
 }
 .bio-content-skills{
@@ -112,23 +112,26 @@
     top: 0;
     font-size: 24px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 1px rgb(173, 212, 241);
-    background-color: rgba(30, 30, 30, 0.9);
+    background-color: #bcd3f4e1;
+    color: black;
+    border: 3px solid black;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+    /* background-color: rgba(30, 30, 30, 0.9); */
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     padding: 25px 8px;
     margin-top: 8px;
-    border: 3px solid rgb(255, 255, 255);
+    /* border: 3px solid white; */
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
     z-index: 20;
 }
 .tldr-text:hover{
-    color: rgba(30, 30, 30, 0.9);
-    border: 3px solid black;
+    color: rgb(196, 211, 236);
+    border: 3px solid rgb(196, 211, 236);
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
-    /* box-shadow: 0px 0px 12px rgba(255, 255, 255); */
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+
     animation-name: tldrHover;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -136,13 +139,19 @@
 }
   @keyframes tldrHover {
     0%{
-        background-color: white;
-    }
+        background-color: #bcd3f4e1;
+        color: black;
+        border: 3px solid black;
+        transform: scale(0.98);
+    }   
     50%{
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: white;
     }
     100%{
-        background-color: white;
+        background-color: #bcd3f4e1;
+        color: black;
+        border: 3px solid black;
+        transform: scale(0.98);
     }
     /* 0%  {
         background: linear-gradient(
@@ -360,14 +369,14 @@
       @keyframes tldrMobile {
         40%  {
             color: black;
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(151, 220, 255, 0.4);
             border: 3px solid rgba(30, 30, 30, 0.9);
             text-shadow: 0px 0px 1px rgb(0, 0, 0);
             box-shadow: 0px 0px 12px rgba(255, 255, 255);
                 }
         60% {
             color: black;
-            background-color: rgb(255, 255, 255, 0.4);
+            background-color: rgb(151, 220, 255, 0.4);
             border: 3px solid rgba(30, 30, 30, 0.9);
             text-shadow: 0px 0px 1px rgb(0, 0, 0);
             box-shadow: 0px 0px 12px rgba(255, 255, 255);

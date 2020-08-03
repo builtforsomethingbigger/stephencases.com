@@ -88,7 +88,24 @@
     background: url('../images/linkedin-hover-icon.png');
     background-size: cover;
     background-repeat: no-repeat;
+    animation-name: linkedin;
+    animation-duration: .1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
+    @keyframes linkedin {
+        0%  {
+            background: url('../images/linkedin-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        100% {
+            background: url('../images/linkedin-hover-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+       }
+    }
+
 .github{
     position: flex;
     flex-direction: row;
@@ -105,7 +122,24 @@
     background: url('../images/github-hover-icon.png');
     background-size: cover;
     background-repeat: no-repeat;
+    animation-name: github;
+    animation-duration: .1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
+    @keyframes github {
+        0%  {
+            background: url('../images/github-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        100% {
+            background: url('../images/github-hover-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+       }
+    }
+
 .twitter{
     position: flex;
     flex-direction: row;
@@ -122,7 +156,24 @@
     background: url('../images/twitter-hover-icon.png');
     background-size: cover;
     background-repeat: no-repeat;
+    animation-name: twitter;
+    animation-duration: .1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
+    @keyframes twitter {
+        0%  {
+            background: url('../images/twitter-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        100% {
+            background: url('../images/twitter-hover-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+       }
+    }
+
 .medium{
     position: flex;
     flex-direction: row;
@@ -139,7 +190,24 @@
     background: url('../images/medium-hover-icon.png');
     background-size: cover;
     background-repeat: no-repeat;
+    animation-name: medium;
+    animation-duration: .01s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
+    @keyframes medium {
+        0%  {
+            background: url('../images/medium-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        100% {
+            background: url('../images/medium-hover-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+       }
+    }
+
 .icon{
     opacity: .9;
 }
