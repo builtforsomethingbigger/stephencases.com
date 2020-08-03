@@ -22,6 +22,7 @@ const Nav = (props) => {
                 <Link to='/resume'><span className="navOptions text-grey">RESUME</span></Link>
                 <Link to='/contact'><span className="navOptions text-grey">CONTACT</span></Link>
             </div>
+            <div className="social-header">Let's Connect:</div>
             <section id="SocialMediaSection">
                 <a href="https://www.linkedin.com/in/stephen-cases/" target="_blank" rel="noopener noreferrer">
                     <i className="linkedin icon"/>

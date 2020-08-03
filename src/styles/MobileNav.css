@@ -53,12 +53,6 @@
     text-shadow: none;
     box-shadow: inset 0px 0px 10px rgba(138, 169, 205, 0.2);
 }
-/* .text-grey{
-    color: rgb(79, 79, 79);
-}
-.text-grey:hover{
-    color: rgb(196, 211, 236);
-} */
 .controller{
     position: relative;
     display: inline-block;
@@ -79,27 +73,15 @@
 }
 
 
-
-
-    .mobileNavButton{
-        width: 100%;
-        height: fit-content;
-        top: 50px;
-        left: 0;
-    }
-    #MobileNav{
-        display: none;
-    }
-    
-    /* #MobileNav{
-        position: absolute;
-        width: 100%;
-        height: fit-content;
-        top: 200px;
-        left: 0;
-        z-index: 15;
-    }
-    .MobileNavOptions{
-        font-size: 20px;
-        padding: 12px 0px 12px 0px;    
-    } */
+.mobileNavButton{
+    width: 100%;
+    height: fit-content;
+    top: 50px;
+    left: 0;
+}
+#MobileNav{
+    display: none;
+}
+#SocialMediaSection{
+    margin-top:10px;
+}

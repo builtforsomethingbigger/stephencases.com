@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Merriweather&family=Architects+Daughter&display=swap');
 body{
   /* background: url('https://media1.tenor.com/images/a45486cc18b375029613df6dfb415acf/tenor.gif?itemid=15984569'); */
   -webkit-background-size: cover;
@@ -6,7 +6,8 @@ body{
   -o-background-size: cover;
   background-size: cover;
   background-blend-mode: overlay;
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 #root{
   position: absolute;

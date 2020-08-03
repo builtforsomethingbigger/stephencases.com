@@ -37,7 +37,8 @@
     box-shadow: inset 0px 0px 10px rgba(138, 169, 205, 0.2);
 }
 .text-grey{
-    color: rgb(79, 79, 79);
+    color: rgb(113, 120, 127);
+    text-shadow: 0px 1px 2px rgba(73, 92, 115, 0.5);
 }
 .text-grey:hover{
     color: rgb(107, 156, 212);
@@ -61,10 +62,16 @@
     text-shadow: none;
     box-shadow: inset 0px 0px 10px rgba(138, 169, 205, 0.2);
 }
+.social-header{
+    margin-top: 30px;
+    font-size: 22px;
+    color: rgb(113, 120, 127);
+    text-shadow: 0px 1px 2px rgba(73, 92, 115, 0.5);
+}
 #SocialMediaSection{
     position: flex;
     flex-direction: column;
-    margin-top:50px;
+    margin-top: -10px;
 }
 .linkedin{
     position: flex;
@@ -138,8 +145,5 @@
     }
     #Nav{
         display: none;
-    }
-    #SocialMediaSection{
-        margin-top:10px;
     }
 }
