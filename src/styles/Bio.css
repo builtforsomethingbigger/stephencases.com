@@ -94,7 +94,7 @@
     bottom: 0;
     left: 0;
     transform-origin: top left;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(20, 20, 20, 0.9);
     transform: skewY(3deg)
 }
 .tldr-btn{
@@ -114,10 +114,10 @@
     font-weight: bold;
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 1px rgb(173, 212, 241);
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(30, 30, 30, 0.9);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
-    padding: 28px 8px;
-    margin-top: 5px;
+    padding: 25px 8px;
+    margin-top: 8px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 50%;
     text-align: center;
@@ -125,7 +125,7 @@
     z-index: 20;
 }
 .tldr-text:hover{
-    color: black;
+    color: rgba(30, 30, 30, 0.9);
     border: 3px solid black;
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
     /* box-shadow: 0px 0px 12px rgba(255, 255, 255); */
@@ -271,7 +271,7 @@
     height: 100%;
     content: '';
     background-color: rgb(196, 211, 236);
-    border-top: 12px solid black;
+    border-top: 12px solid rgba(30, 30, 30, 0.9);
     z-index: -1;
     top: -12px;
     right: 0;
@@ -311,7 +311,7 @@
     box-sizing: border-box;
     background-color: rgb(196, 211, 236);
     margin-top: -945px;
-    border-bottom: 15px solid black;
+    border-bottom: 15px solid rgba(30, 30, 30, 0.9);
     left: 0.5%;
     overflow-x: hidden;
     z-index: -1;
@@ -339,7 +339,6 @@
         font-size: 15px;
         line-height: 22px;
         margin-bottom: 40px;
-        background-color: rgba(0, 0, 0, 0.8);
     }
     .tldr-text{
         top: -22px;
@@ -350,7 +349,7 @@
     .tldr-text:hover{
         color: rgb(255, 255, 255);
         text-shadow: 0px 0px 1px rgb(173, 212, 241);
-        background-color: rgb(0, 0, 0);
+        background-color: rgba(30, 30, 30, 0.9);
         box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);    
         border: 3px solid rgb(255, 255, 255);
         animation-name: tldrMobile;
@@ -362,14 +361,14 @@
         40%  {
             color: black;
             background-color: rgba(255, 255, 255, 0.4);
-            border: 3px solid black;
+            border: 3px solid rgba(30, 30, 30, 0.9);
             text-shadow: 0px 0px 1px rgb(0, 0, 0);
             box-shadow: 0px 0px 12px rgba(255, 255, 255);
                 }
         60% {
             color: black;
             background-color: rgb(255, 255, 255, 0.4);
-            border: 3px solid black;
+            border: 3px solid rgba(30, 30, 30, 0.9);
             text-shadow: 0px 0px 1px rgb(0, 0, 0);
             box-shadow: 0px 0px 12px rgba(255, 255, 255);
                 }

@@ -65,8 +65,8 @@
         to bottom, 
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0.05) 10%,
-        rgba(0, 0, 0, 0.9) 80%,
-        rgb(0, 0, 0) 100%
+        rgba(0, 0, 0, 0.6) 80%,
+        rgb(0, 0, 0, 0.8) 100%
         ); 
 }
 .portfolio-more-info{
@@ -117,8 +117,7 @@
     width: 96%;
     height: fit-content;
     padding: 2%;
-    background-color: rgba(255, 255, 255);
-    background-color: rgb(0, 0, 0, 0.85);
+    background-color: rgba(30, 30, 30, 0.9);
     box-shadow: 0px 1px 3px rgba(17, 64, 134, 0.58);
     font-size: 33px;
     color: white;
@@ -141,7 +140,7 @@
     width: 100%;
     height: fit-content;
     padding: 10px 10px;
-    background-color: rgb(0, 0, 0, 0.85);
+    background-color: rgba(30, 30, 30, 0.9);
     box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.5);
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
     font-size: 20px;
