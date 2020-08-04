@@ -30,10 +30,10 @@ body{
   max-width: 1500px;
   background: linear-gradient(
     to bottom, 
-    rgb(194, 195, 197) 0%,
+    rgb(187, 197, 215) 0%,
     rgb(245, 248, 254) 30%,
     rgb(245, 248, 254) 60%,
-    rgb(194, 195, 197) 100%
+    rgb(187, 197, 215) 100%
     ); 
   box-shadow: 0px 0px 100px rgba(98, 109, 120, 0.621);
   z-index: 100;
@@ -61,7 +61,7 @@ body{
     100% {
       box-shadow: 0px 0px 10px rgba(98, 109, 120, 0.6);
     }
-}
+  }
 
 #Main{
   position: relative;
