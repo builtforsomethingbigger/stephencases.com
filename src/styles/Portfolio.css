@@ -95,8 +95,15 @@
     width: 100%;
     height: fit-content;
     text-align: left;
-    background-color: rgb(196, 211, 236);
-    cursor: default;
+    /* background-color: rgb(233, 238, 241); */
+    background: linear-gradient(
+        to bottom right, 
+        rgb(194, 195, 197) 0%,
+        rgb(245, 248, 254) 40%,
+        rgb(245, 248, 254) 60%,
+        rgb(194, 195, 197) 100%
+        ); 
+        cursor: default;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 

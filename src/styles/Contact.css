@@ -27,11 +27,11 @@
     padding: 20px;
     background: linear-gradient(
         to bottom right, 
-        rgb(138, 141, 144) 0%,
+        rgb(194, 195, 197) 0%,
         rgb(245, 248, 254) 40%,
         rgb(245, 248, 254) 60%,
-        rgb(138, 141, 144) 100%
-        ); 
+        rgb(194, 195, 197) 100%
+            ); 
     border: 2px solid rgb(229, 229, 229);
     border-radius: 25px;
     box-shadow: 0px 0px 15px rgba(165, 172, 181, 0.5);
@@ -73,8 +73,8 @@ input:hover{
 .contact-label{
     line-height: 25px;
     font-weight: bold;
-    color: rgb(35, 35, 35);
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.306);
+    color: rgb(66, 66, 66);
+    text-shadow: 0px 2px 3px rgba(23, 59, 88, 0.306);
 }
 .input-full{
     position: relative;
@@ -107,8 +107,8 @@ input:hover{
     background: linear-gradient(
         to bottom, 
         rgb(167, 197, 227) 2%,
-        rgb(106, 142, 183) 33%,
-        rgba(106, 142, 183) 66%,
+        rgb(78, 156, 202) 33%,
+        rgba(78, 156, 202) 66%,
         rgba(167, 197, 227) 100%
         ); 
     border: 2px solid rgb(179, 220, 254);
@@ -129,8 +129,8 @@ input:hover{
     background-color: white;
     text-align: center;
     font-size: 30px;
-    color: black;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.306);
+    color: rgb(38, 145, 207);
+    text-shadow: 0px 2px 3px rgba(33, 108, 161, 0.306);
     z-index: 5;
 
     animation-name: thankYouMsg;
