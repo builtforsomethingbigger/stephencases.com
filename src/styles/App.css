@@ -73,6 +73,7 @@ body{
   border-right: 8px solid rgb(197, 197, 197);
   /* box-shadow: inset 0px 0px 15px rgba(93, 93, 93, 0.5); */
   background-color: white;
+  overflow-x: hidden;
   overflow: hidden;
   z-index: 100;
 }
