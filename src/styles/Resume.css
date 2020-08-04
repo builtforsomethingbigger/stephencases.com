@@ -5,6 +5,7 @@
     height: 100%;
     font-family: 'Merriweather', sans-serif;
     text-align: center;
+    overflow-x: hidden;
     overflow: scroll;
 }
 .dl-resume{
