@@ -27,13 +27,14 @@
     padding: 20px;
     background: linear-gradient(
         to bottom right, 
-        rgb(226, 230, 244) 0%,
-        rgb(255, 255, 255) 50%,
-        rgb(255, 255, 255) 60%,
-        rgb(209, 214, 224) 100%
-    ); 
+        rgb(138, 141, 144) 0%,
+        rgb(245, 248, 254) 40%,
+        rgb(245, 248, 254) 60%,
+        rgb(138, 141, 144) 100%
+        ); 
+    border: 2px solid rgb(229, 229, 229);
     border-radius: 25px;
-    box-shadow: 0px 0px 15px rgba(138, 169, 205, 0.5);
+    box-shadow: 0px 0px 15px rgba(165, 172, 181, 0.5);
 }
 .conact-form:hover{
     box-shadow: 0px 0px 5px rgba(138, 169, 205, 0.3);
@@ -46,10 +47,10 @@ input{
     padding-left: 8px;
     border: 1px solid rgb(166, 180, 195);
     border-radius: 8px;
-    box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
+    box-shadow: inset 0px 0px 6px rgba(74, 79, 84, 0.6);
 }
 input:hover{
-    box-shadow: inset 0px 0px 10px rgba(10, 50, 95, 0.7);
+    box-shadow: inset 0px 0px 10px rgba(64, 64, 64, 0.7);
 }
 .msg-input{
     width: 96%;
@@ -63,16 +64,16 @@ input:hover{
     border: none;
     border: 1px solid rgb(166, 180, 195);
     border-radius: 8px;
-    box-shadow: inset 0px 0px 6px rgba(10, 50, 95, 0.6);
+    box-shadow: inset 0px 0px 6px rgba(74, 79, 84, 0.6);
 }
 .msg-input:hover{
-    box-shadow: inset 0px 0px 10px rgba(10, 50, 95, 0.7);
+    box-shadow: inset 0px 0px 10px rgba(64, 64, 64, 0.7);
 }
 
 .contact-label{
     line-height: 25px;
     font-weight: bold;
-    color: rgb(75, 141, 217);
+    color: rgb(35, 35, 35);
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.306);
 }
 .input-full{
@@ -88,14 +89,14 @@ input:hover{
     width: fit-content;
     height: fit-content;
     padding: 8px 25px;
-    border: 2px solid rgb(124, 180, 243);
+    border: 2px solid rgb(158, 158, 158);
     border-radius: 10px;
     background: linear-gradient(
         to bottom, 
-        rgb(136, 199, 231) 2%,
-        rgba(75, 141, 217) 33%,
-        rgba(75, 141, 217) 66%,
-        rgba(136, 199, 231) 100%
+        rgb(170, 170, 170) 2%,
+        rgb(93, 95, 96) 33%,
+        rgba(93, 95, 96) 66%,
+        rgba(170, 170, 170) 100%
     ); 
     box-shadow: 0px 2px 8px rgb(145, 165, 188);
     font-size: 15px;
@@ -103,7 +104,20 @@ input:hover{
     color: white;
 }
 .contact-submit-btn:hover{
+    background: linear-gradient(
+        to bottom, 
+        rgb(167, 197, 227) 2%,
+        rgb(106, 142, 183) 33%,
+        rgba(106, 142, 183) 66%,
+        rgba(167, 197, 227) 100%
+        ); 
+    border: 2px solid rgb(179, 220, 254);
     box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+    transform: scale(1.06);
+}
+.contact-submit-btn:hover{
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.1);
+    transform: scale(0.96);
 }
 .thank-you-reponse{
     position: relative;
@@ -146,15 +160,19 @@ input:hover{
         bottom: 0;
     }
     .contact-header{
+        margin-top: 20px;
         font-size: 28px;
     }
     .contact-subheader{
+        margin-top: -10px;
         font-size: 16px;
     }
     .conact-form{
-        width: 85%;
-        top: 20px;
+        width: 90%;
+        top: 10px;
+        left: -5px;
         margin-bottom: 80px;
+        border-radius: 0;
     }  
     .thank-you-reponse{
         width: 72%;

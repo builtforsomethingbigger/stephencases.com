@@ -30,10 +30,10 @@ body{
   max-width: 1500px;
   background: linear-gradient(
     to bottom, 
-    rgb(94, 98, 101) 0%,
+    rgb(156, 174, 188) 0%,
     rgb(245, 248, 254) 30%,
     rgb(245, 248, 254) 60%,
-    rgb(94, 98, 101) 100%
+    rgb(156, 174, 188) 100%
     ); 
   box-shadow: 0px 0px 100px rgba(98, 109, 120, 0.621);
   z-index: 100;
@@ -71,14 +71,14 @@ body{
   height: 98.4vh;
   top: .8vh;
   border-right: 8px solid rgb(90, 94, 101);
-  box-shadow: inset 0px 0px 15px rgba(138, 169, 205, 0.3);
+  /* box-shadow: inset 0px 0px 15px rgba(93, 93, 93, 0.5); */
   background-color: white;
   overflow: hidden;
   z-index: 100;
 }
-#Main:hover{
+/* #Main:hover{
   box-shadow: inset 0px 0px 15px rgba(138, 169, 205, 0.5);
-}
+} */
 
 .fade-in-fx{
   animation-name: fadeIn;
@@ -202,7 +202,8 @@ li{
       bottom: 0;
       top:1%;
     box-shadow: inset 0px 2px 12px rgba(38, 38, 44, 0.299);
-  }
+    border-right: none;
+}
   .loadingData{
     top: 50px;
   }

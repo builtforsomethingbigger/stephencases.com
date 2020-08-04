@@ -167,12 +167,19 @@
         height: 85%;
         bottom: 0;
     }
+    .portfolio-header{
+        margin: 25px 0px 15px;
+    }
     .portfolio-card{
-        width: 95%;
-        margin-bottom: 50px;
+        width: 99%;
+        left: -8px;
+        margin-bottom: 20px;
+        border-radius: 0;
     }
     .project-title{
         font-size: 28px;
     }
-
+    .portfolio-preview, .bottom-fade, .card-info{
+        border-radius: 0;
+    }
 }
