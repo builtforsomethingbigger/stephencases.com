@@ -31,9 +31,9 @@ import '../../styles/Bio.css';
                     <h1 className="bio-intro-about"><s>A Little</s> About Me...</h1>
                     <div className="aBit">QUITE A BIT</div>
                     <p className="bio-content pad-B-50">
-                    First and foremost, thank you for visiting my site. I appreciate your time and interest.
+                        First and foremost, thank you for visiting my site. I appreciate your time and interest.
                         <br/><br/>
-                        I've always been fascinated with Web Development. Though initially pursuing a career in medicine to please my parents, I knew early on that the internet was the way of the future. Little did I know how much it would inevitably change my life.
+                        I've always been fascinated with Web Development. Though initially pursuing a career in bio tech to please my mother (<i>it was the closest thing to becoming a doctor in her eyes</i>), I knew early on that the internet was the way of the future. Little did I know how much it would inevitably change my life.
                         <br/><br/>                    
                         After college, I was working as a Lab Tech in Florida when I decided to take my interest in web development seriously. I taught myself the basics through video tutorials and whatever I could find on w3schools. Before I knew it, I was building simple web pages for my friends and a few personal clients.
                         <br/><br/>                    
@@ -41,9 +41,9 @@ import '../../styles/Bio.css';
                         <br/><br/>                    
                         I ended up having a fairly successful career in the world of digital marketing. I gained a wealth of experience working for some reputable companies (<i>I won't bore you with the name-drops. You can view my resume page to find out more</i>). Unfortunately, I was laid off just around the time the pandemic hit. 
                         <br/><br/>                    
-                        So, what to do? I had several opportunities lined up to continue my career with digital marketing, however, I realized I wasn't truly happy. After weighing my options, I decided to take another leap of faith and enrolled into the Flatiron School's Software Engineering program. For the next fifteen weeks, I was immersed in the world of full-stack development, learning core concepts of object-oriented programming, backend languages and frameworks such as Ruby on Rails, frontend languages and frameworks with JavaScript and ReactJS, along with RESTful APIs and more.
+                        So, what to do? After weighing my options, I decided to take another leap of faith and enrolled into the Flatiron School's Software Engineering program. For the next fifteen weeks, I was immersed in the world of full-stack development, learning core concepts of object-oriented programming, backend languages and frameworks such as Ruby on Rails, frontend languages and frameworks with JavaScript and ReactJS, along with RESTful APIs and more.
                         <br/><br/>                    
-                        Now, I'm ready and eager to start this new career path. With over a decade of frontend development experience, coupled with my new found Software Engineering skills in ReactJS and Ruby on Rails, the sky's the limit!
+                        Now, having over a decade of frontend development experience in digital marketing, coupled with my new found software engineering skills in ReactJS and Ruby on Rails, I'm ready for my next challenge!
                         <br/><br/><br/>
                     </p>
                     <br/>
@@ -59,7 +59,7 @@ import '../../styles/Bio.css';
                             <tbody>
                                 <tr>
                                     <td width="10" align="left" valign="top" style={{fontSize: 28, lineHeight: 1.2}}>-&nbsp;</td>
-                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Welcoming new opportunities to strengthen my skills as a developer.</td>
+                                    <td align="left"  style={{lineHeight: 1.8, paddingBottom: 20}}>Welcoming new opportunities to leverage and strengthen my skills as a developer.</td>
                                 </tr>
                             </tbody>
                         </table>
