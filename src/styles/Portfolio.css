@@ -194,7 +194,7 @@
     .portfolio-preview, .bottom-fade, .card-info{
         border-radius: 0;
     }
-    .portfolio-more-info{
-        bottom: 10px;
+    .card-info{
+        margin-top: 0;
     }
 }
