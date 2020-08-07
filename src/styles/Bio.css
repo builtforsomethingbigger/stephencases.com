@@ -338,8 +338,9 @@
     }
     .bio-intro{
         font-size: 30px;
+        text-shadow: 0px 2px 3px rgba(138, 169, 205, 0.5);
         padding-bottom: 40px;
-    }
+}
     .bio-content-skills{
         font-size: 15px;
         line-height: 22px;
