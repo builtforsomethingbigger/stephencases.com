@@ -25,16 +25,16 @@ const Nav = (props) => {
             <div className="social-header">Let's Connect:</div>
             <section id="SocialMediaSection">
                 <a href="https://www.linkedin.com/in/stephen-cases/" target="_blank" rel="noopener noreferrer">
-                    <i className="linkedin icon"/>
+                    <i className="linkedin social-icon"/>
                 </a>
                 <a href="https://github.com/builtforsomethingbigger" target="_blank" rel="noopener noreferrer">
-                    <i className="github icon"/>
+                    <i className="github social-icon"/>
                 </a>
                 <a href="https://twitter.com/B4S_Bigger" target="_blank" rel="noopener noreferrer">
-                    <i className="twitter icon"/>
+                    <i className="twitter social-icon"/>
                 </a>
                 <a href="https://medium.com/@builtforsomethingbigger" target="_blank" rel="noopener noreferrer">
-                    <i className="medium icon"/>
+                    <i className="medium social-icon"/>
                 </a>
             </section>
                 {displayController()}

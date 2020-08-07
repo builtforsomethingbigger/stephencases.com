@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchBar from './vlog/SearchBar'
-import youtube from './vlog/apis/vlog/youtube'
+import youtube from './vlog/apis/youtube'
 import VideoList from './vlog/VideoList'
 import VideoDetail from './vlog/VideoDetail'
 
@@ -43,15 +43,15 @@ export default class VLog extends React.Component{
                 />
                 <div className="ui grid">
                     <div className="ui row">
-                        <div className="eleven wide column">
-                            <VideoDetail 
-                                video={this.state.selectedVideo}
-                            />
-                        </div>
                         <div className="five wide column">
                             <VideoList 
                             videos={this.state.videos} 
                             onVideoSelect={this.onVideoSelect}
+                            />
+                        </div>
+                        <div className="eleven wide column">
+                            <VideoDetail 
+                                video={this.state.selectedVideo}
                             />
                         </div>
                     </div>

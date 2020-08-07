@@ -5,6 +5,7 @@ import Bio from './main/Bio'
 import Portfolio from './main/Portfolio'
 import Resume from './main/Resume'
 import Contact from './main/Contact'
+import VLog from './main/VLog'
 import CMS from './scases/CMS'
 import '../styles/App.css';
 
@@ -40,6 +41,11 @@ const Main = (props) => {
             <Resume  {...routerProps} 
                 loggedInStatus={props.isLoggedIn}
                 entries={props.entries} 
+            />
+            )}/>
+            <Route exact path='/vlog'  render={routerProps => (
+            <VLog  {...routerProps} 
+                loggedInStatus={props.isLoggedIn}
             />
             )}/>
             <Route exact path='/contact'  render={routerProps => (
