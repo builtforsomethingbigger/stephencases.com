@@ -17,7 +17,7 @@ import '../../styles/Bio.css';
     return(
         <article id="Bio" className="fade-in-fx">
             <div className="bio-body">
-                <section>
+                <section className="bio-top-section">
                     <p className="bio-intro">Hi! I'm Steve and I'm a <span className="full-stack">Full-Stack</span> Developer.</p>
                     <p className="bio-content-skills">
                         <b className="text-blue">let</b>&nbsp;<b className="text-yellow">fullStackDeveloper</b> <b className="text-fushia">= {`[`}</b><span className="text-orange">HTML, CSS, JavaScript, ReactJS, Ruby on Rails</span><b className="text-fushia">{`]`}</b>
