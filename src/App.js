@@ -2,13 +2,8 @@ import React from 'react';
 import {Switch, Route} from 'react-router-dom'
 import ProfileBanner from './components/profile/ProfileBanner'
 import Login from './components/scases/Login'
-import CMS from './components/scases/CMS'
-import Bio from './components/main/Bio'
-import Portfolio from './components/main/Portfolio'
-import Resume from './components/main/Resume'
-import Contact from './components/main/Contact'
+import Main from './components/Main'
 import './styles/App.css';
-import MobileNav from './components/nav/MobileNav';
 
 const resumeAPI = 'https://stephen-cases-backend.herokuapp.com/resumes'
 const bioAPI = 'https://stephen-cases-backend.herokuapp.com/bios'
@@ -30,6 +25,7 @@ export default class App extends React.Component{
   }  
 
 
+//=[ FETCH FUNCTIONS ]
   componentDidMount() {
     this.fetchResumes()
     this.fetchBio()
@@ -55,7 +51,7 @@ export default class App extends React.Component{
 
 
 
-//LOGIN FUNCTIONS
+//=[ LOGIN FUNCTIONS ]
   handleLogin = (data) => {
     this.setState({
       isLoggedIn: "Logged In",
@@ -72,6 +68,8 @@ export default class App extends React.Component{
     })
   }
 
+
+//=[ MOBILE NAV FUNCTIONS ]
   showMobileNav = e => {
     if(this.state.mobileNav){
       this.setState({
@@ -92,15 +90,6 @@ export default class App extends React.Component{
     }
   }
 
-  showCMS = () => {
-    if(this.state.user.username){
-      return (
-        <Route exact path='/cms'  render={routerProps => (
-          <CMS {...routerProps} />
-        )}/>
-      )
-    }
-  }
 
   render(){
     return(
@@ -119,34 +108,16 @@ export default class App extends React.Component{
               handleSuccessfulAuth={this.handleLogin} 
               loggedInStatus={this.state.isLoggedIn} 
             />
-            )}/>
-            <main id="Main">
-              <MobileNav mobileNav={this.state.mobileNav} hideMobileNav={this.hideMobileNav}/>
-              <Route exact path='/'  render={routerProps => (
-                <Bio  {...routerProps} 
-                loggedInStatus={this.state.isLoggedIn}
-                  bio={this.state.bio}
-                />
-              )}/>
-              <Route exact path='/portfolio'  render={routerProps => (
-                <Portfolio  {...routerProps} 
-                  loggedInStatus={this.state.isLoggedIn}
-                  portfolio={this.state.portfolio} 
-                />
-              )}/>
-              <Route exact path='/resume'  render={routerProps => (
-                <Resume  {...routerProps} 
-                  loggedInStatus={this.state.isLoggedIn}
-                  entries={this.state.entries} 
-                />
-              )}/>
-              <Route exact path='/contact'  render={routerProps => (
-                <Contact  {...routerProps} 
-                  loggedInStatus={this.state.isLoggedIn}
-                />
-              )}/>
-              {this.showCMS()}
-            </main>
+          )}/>
+          <Main 
+            loggedInStatus={this.state.isLoggedIn}
+            username={this.state.user.username} 
+            mobileNav={this.state.mobileNav} 
+            hideMobileNav={this.hideMobileNav}
+            bio={this.state.bio}
+            portfolio={this.state.portfolio} 
+            entries={this.state.entries}
+          />
         </Switch>
       </div>
     )
