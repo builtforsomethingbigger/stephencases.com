@@ -291,14 +291,13 @@
     width: 100%;
     left: -75px;
     margin: 80px;
-    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
 }
 .bio-intro-status{
     font-size: 35px;
-    font-weight: bold;
+        font-weight: bold;
     color: rgb(50, 50, 50);
     text-align: left;
-    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+    text-shadow: 0px 2px 4px rgba(82, 109, 139, 0.5);
 }
 .neg-pad-20{
     margin-bottom: 5px;
