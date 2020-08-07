@@ -233,7 +233,7 @@
     font-weight: bold;
     color: rgb(56, 56, 56);
     text-align: left;
-    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.5);
+    text-shadow: 0px 2px 4px rgba(138, 169, 205, 0.3);
     margin-bottom: -20px;
 }
 .aBit{
@@ -258,7 +258,7 @@
     font-weight: 400;
     color: rgb(50, 50, 50);
     text-align: left;
-    text-shadow: 0px 2px 4px rgba(74, 97, 126, 0.5);
+    text-shadow: 0px 2px 4px rgba(74, 97, 126, 0.3);
 }
 .slant-up-top{
     position: absolute;
@@ -305,7 +305,7 @@
 .text-white{
     font-weight: 700;
     color: white;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
 }
 .blue-bottom{
     position: absolute;
