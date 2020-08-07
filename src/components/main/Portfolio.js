@@ -15,6 +15,7 @@ const Portfolio = (props) => {
             ))
         }
     }
+    
     return(
         <div id="Portfolio" className="fade-in-fx">
             <h1 className="portfolio-header">MY PORTFOLIO</h1>
