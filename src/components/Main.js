@@ -43,11 +43,11 @@ const Main = (props) => {
                 entries={props.entries} 
             />
             )}/>
-            {/* <Route exact path='/vlog'  render={routerProps => (
+            <Route exact path='/vlog'  render={routerProps => (
             <VLog  {...routerProps} 
                 loggedInStatus={props.isLoggedIn}
             />
-            )}/> */}
+            )}/>
             <Route exact path='/contact'  render={routerProps => (
             <Contact  {...routerProps} 
                 loggedInStatus={props.isLoggedIn}
