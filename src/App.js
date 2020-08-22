@@ -103,7 +103,7 @@ export default class App extends React.Component{
               loggedInStatus={this.state.isLoggedIn}
             />
           )}/> */}
-          <Route basename='/stephencases.com' exact path='/login' render={routerProps => (
+          <Route exact path='/login' render={routerProps => (
             <Login  {...routerProps}
               handleSuccessfulAuth={this.handleLogin} 
               loggedInStatus={this.state.isLoggedIn} 
