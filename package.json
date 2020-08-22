@@ -1,6 +1,6 @@
 {
-  "name": "www.stephencases.com",
-  "homepage": "http://builtforsomethingbigger.github.io/stephencases.com",
+  "name": "builtforsomethingbigger.github.io",
+  "homepage": "http://builtforsomethingbigger.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
