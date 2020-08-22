@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/www.stephencases.com/static/css/main.0b6c2d5c.chunk.css",
-    "main.js": "/www.stephencases.com/static/js/main.1f572eb9.chunk.js",
-    "main.js.map": "/www.stephencases.com/static/js/main.1f572eb9.chunk.js.map",
-    "runtime-main.js": "/www.stephencases.com/static/js/runtime-main.89f2373e.js",
-    "runtime-main.js.map": "/www.stephencases.com/static/js/runtime-main.89f2373e.js.map",
-    "static/js/2.a9b49e8a.chunk.js": "/www.stephencases.com/static/js/2.a9b49e8a.chunk.js",
-    "static/js/2.a9b49e8a.chunk.js.map": "/www.stephencases.com/static/js/2.a9b49e8a.chunk.js.map",
-    "index.html": "/www.stephencases.com/index.html",
-    "precache-manifest.b41099dc1e197c6d141de8ddc17d8c33.js": "/www.stephencases.com/precache-manifest.b41099dc1e197c6d141de8ddc17d8c33.js",
-    "service-worker.js": "/www.stephencases.com/service-worker.js",
-    "static/css/main.0b6c2d5c.chunk.css.map": "/www.stephencases.com/static/css/main.0b6c2d5c.chunk.css.map",
-    "static/js/2.a9b49e8a.chunk.js.LICENSE.txt": "/www.stephencases.com/static/js/2.a9b49e8a.chunk.js.LICENSE.txt",
-    "static/media/ProfileBanner.css": "/www.stephencases.com/static/media/Headshot_2018.01e3a48c.jpg",
-    "static/media/Nav.css": "/www.stephencases.com/static/media/twitter-icon.06ff1f29.png",
-    "static/media/stephen-cases_resume.pdf": "/www.stephencases.com/static/media/stephen-cases_resume.a2a7a656.pdf"
+    "main.css": "/stephencases.com/static/css/main.256d7155.chunk.css",
+    "main.js": "/stephencases.com/static/js/main.d0a44103.chunk.js",
+    "main.js.map": "/stephencases.com/static/js/main.d0a44103.chunk.js.map",
+    "runtime-main.js": "/stephencases.com/static/js/runtime-main.8708499f.js",
+    "runtime-main.js.map": "/stephencases.com/static/js/runtime-main.8708499f.js.map",
+    "static/js/2.a9b49e8a.chunk.js": "/stephencases.com/static/js/2.a9b49e8a.chunk.js",
+    "static/js/2.a9b49e8a.chunk.js.map": "/stephencases.com/static/js/2.a9b49e8a.chunk.js.map",
+    "index.html": "/stephencases.com/index.html",
+    "precache-manifest.cd3028008b780d6810a71623ce0f8fab.js": "/stephencases.com/precache-manifest.cd3028008b780d6810a71623ce0f8fab.js",
+    "service-worker.js": "/stephencases.com/service-worker.js",
+    "static/css/main.256d7155.chunk.css.map": "/stephencases.com/static/css/main.256d7155.chunk.css.map",
+    "static/js/2.a9b49e8a.chunk.js.LICENSE.txt": "/stephencases.com/static/js/2.a9b49e8a.chunk.js.LICENSE.txt",
+    "static/media/ProfileBanner.css": "/stephencases.com/static/media/Headshot_2018.01e3a48c.jpg",
+    "static/media/Nav.css": "/stephencases.com/static/media/twitter-icon.06ff1f29.png",
+    "static/media/stephen-cases_resume.pdf": "/stephencases.com/static/media/stephen-cases_resume.a2a7a656.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.89f2373e.js",
+    "static/js/runtime-main.8708499f.js",
     "static/js/2.a9b49e8a.chunk.js",
-    "static/css/main.0b6c2d5c.chunk.css",
-    "static/js/main.1f572eb9.chunk.js"
+    "static/css/main.256d7155.chunk.css",
+    "static/js/main.d0a44103.chunk.js"
   ]
 }
