@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46037f7785adf697c5108f9bcd18f792",
+    "revision": "28445d4a0530511c736dd2f7ca52847c",
     "url": "/stephencases.com/index.html"
   },
   {
-    "revision": "c42a82be57b5aafb2e84",
+    "revision": "edb8deed24c41ef35730",
     "url": "/stephencases.com/static/css/main.256d7155.chunk.css"
   },
   {
-    "revision": "2503b22afc14ac75c199",
-    "url": "/stephencases.com/static/js/2.a9b49e8a.chunk.js"
+    "revision": "48c3c64c763e679faa80",
+    "url": "/stephencases.com/static/js/2.d09da4a2.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/stephencases.com/static/js/2.a9b49e8a.chunk.js.LICENSE.txt"
+    "url": "/stephencases.com/static/js/2.d09da4a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c42a82be57b5aafb2e84",
-    "url": "/stephencases.com/static/js/main.d0a44103.chunk.js"
+    "revision": "edb8deed24c41ef35730",
+    "url": "/stephencases.com/static/js/main.119fc8a6.chunk.js"
   },
   {
-    "revision": "420c36905f8234615ccb",
-    "url": "/stephencases.com/static/js/runtime-main.8708499f.js"
+    "revision": "25883d7706b32eec46ca",
+    "url": "/stephencases.com/static/js/runtime-main.a4a2e3d1.js"
   },
   {
     "revision": "01e3a48c4859217fc1df032ad49fe8fb",
