@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46037f7785adf697c5108f9bcd18f792",
+    "revision": "d9e35064ec20db62cda1827a088bfa79",
     "url": "/stephencases.com/index.html"
   },
   {
-    "revision": "c42a82be57b5aafb2e84",
+    "revision": "bee68527f5dada7535e7",
     "url": "/stephencases.com/static/css/main.256d7155.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stephencases.com/static/js/2.a9b49e8a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c42a82be57b5aafb2e84",
-    "url": "/stephencases.com/static/js/main.d0a44103.chunk.js"
+    "revision": "bee68527f5dada7535e7",
+    "url": "/stephencases.com/static/js/main.9f4f7b76.chunk.js"
   },
   {
     "revision": "420c36905f8234615ccb",
